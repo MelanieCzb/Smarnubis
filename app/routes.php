@@ -83,8 +83,9 @@
 			['GET', '/liste', 'contacts#liste', 'liste'],
 
 		// Templates/administration
-			['GET', '/login', 'Administration#login', 'login'],
+			['GET|POST', '/login', 'Administration#login', 'login'],
+			['GET|POST', '/logout', 'Administration#logout', 'logout'],
 
-			['GET', '/inscription', 'Administration#inscription', 'inscription'],
+			['GET|POST', '/inscription', 'Administration#inscription', 'inscription'],
 
 	);

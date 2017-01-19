@@ -42,4 +42,24 @@ class SmarnuController extends Controller
 		$this->show('smarnu/histoireSmarnu');
 	}
 
+	public function vigilanceRisque()
+	{
+		$this->show('smarnu/formulaireVigilance');
+	}
+
+	public function lettreSyndicale()
+	{
+		$this->show('smarnu/lettreSyndicale');
+	}
+
+	public function liens()
+	{
+		$this->show('smarnu/liens');
+	}
+
+	public function partenaires()
+	{
+		$this->show('smarnu/partenaires');
+	}
+
 }
