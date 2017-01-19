@@ -1,0 +1,4 @@
+.vagrant/
+/vendor/
+/app/config.php
+/phpDocumentor.phar
