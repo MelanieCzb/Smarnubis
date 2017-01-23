@@ -1,0 +1,89 @@
+.jcarousel-wrapper {
+    margin: auto;
+    position: relative;
+    /*test avec max-... pour le responsive*/
+    max-width: 1170px;
+    max-height: 485px;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.fa-arrow-circle-left,
+.fa-arrow-circle-right {
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    color: #e3f2fd;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.fa-arrow-circle-left {
+    left: 20px;
+}
+
+.fa-arrow-circle-right {
+    right: 20px;
+}
+
+.fa-arrow-circle-left:hover span,
+.fa-arrow-circle-right:hover span {
+    display: block;
+}
+
+/*Fait que la flèche à une couleur différente*/
+    .fa-arrow-circle-left.inactive,
+    .fa-arrow-circle-right.inactive {
+        opacity: .5;
+        cursor: default;
+    }
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    min-width: 15px;
+    background: #fff;
+    color: #1e88e5;
+    border-radius: 15px;
+    padding: 4px;
+    text-align: center;
+    margin-right: 4px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #e3f2fd;
+    color: #0d47a1;
+    opacity: 1;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}

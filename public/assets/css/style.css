@@ -1,26 +1,198 @@
-html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:300,400,700');
+
+/*--------------------------RESET CSS--------------------------------------------------*/
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    font-size: 62.5%;
+    background: url("../img/gray_jean.png");
+  }  
+
+  body{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  header{
+    position: relative;
+  }
+  
+  #menu,h1,p,#bttn-co{
+    max-width: 117rem;
+    margin:auto;
+  }
+
+/*----------------------------------------Boutton connexion---------------------------*/
+  #bttn-co{
+    top: 1rem;
+    text-align: right;
+  }
+
+  #bttn-co li{
+    display: inline-block;
+    margin: 1rem 0;
+  }
+
+  #bttn-co button{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #0d47a1;
+    color: white;
+  }
+
+/*------------------------Menu + Nav--------------------------------------------*/
+  header nav{
+    margin-bottom : 2rem;
+    background-color: white;
+  }
+  
+  
+/*--------------------------------Main-------------------------------------*/
+  h1{
+    font-variant: small-caps;
+    padding: 4rem 0;
+    font-size: 3rem;
+  }
+
+  h1 span{
+    display:block;
+  }
+
+  h1+p, h2+p{
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  #flat_icon{
+    background-color: white;
+    max-width: 100%;
+  }
+
+  section figure{
+    display: inline-block; 
+    width: 24%;
+    margin: 4rem 0;
+  }
+
+
+  figcaption{
+    margin : 2rem 0;
+  }
+
+  section div{
+    max-width: 117rem;
+    margin: auto;
+  }
+
+  h2{
+      margin: 2rem 0;
+      font-size: 2.5rem;
+  }
+
+  main section:last-of-type{
+    background-color: white;
+  }
+
+
+/*----------------------------Footer-------------------------------*/
+footer{
+  background-color: #bbdefb;
 }
 
-.container {
-	margin: 50px;
+footer aside{
+  background-color: #0d47a1;
+  padding: 1.2rem 2rem; 
+  text-align: right;
 }
 
-a {
-	text-decoration: none;
-	color: #A6E22E;
+footer section{
+  padding: 1rem;
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+  max-width: 585px;
+  margin-bottom: 1rem;
 }
 
-a:hover {
-	color: #F92672;
+footer h3{
+  font-size: 2rem;
+  margin : 1rem 0;
+  text-align: left;
 }
 
-h1 {
-	color: #F92672;
+/*footer section p, footer section label{
+  color : black;
+  margin-bottom: .5rem;
+}*/
+
+footer p{
+  font-family: 'Quicksand', sans-serif;
 }
 
-h2 {
-	color: #66D9EF;
+
+/*footer section p:nth-child(2){
+  color: yellow;
+
+}*/
+
+footer section div{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  max-width: 100%;
+}
+
+footer section div:first-of-type{
+  padding-right: 100px;
+}
+
+footer section div:last-of-type{
+  text-align: left;
+}
+
+footer [type="submit"], footer label{
+  display: block;
+  margin: auto;
+  vertical-align: top;
+}
+
+footer [type="submit"]{
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #0d47a1;
+  color: white;
+}
+
+footer label{
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+footer [type="text"]{
+  margin-bottom: .5rem;
+  border-radius: .5rem;
+  -webkit-border-radius : .5rem;
+  -moz-border-radius : .5rem;
+  border: none;
+  padding: .5rem .5rem;
+  width: 40%;
+  text-align: center;
+}
+
+
+footer div span{
+  font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width : 1000px) {
+  .stellarnav > ul > li > a { 
+  padding: 20px 23px; 
+   }
 }

@@ -28,18 +28,18 @@
 			<select name="myform[region]">
 				<option value="">Sélectionner la région d'exercice.</option>
 				<option value="Auvergne-Rhone-Alpes" <?= (($delegues['region']) == "Auvergne-Rhone-Alpes") ? "selected" : "" ?>>Auvergne-Rhone-Alpes</option>
-				<option value="Bourgogne-Franche-Compté" <?= (($delegues['region']) == "Bourgogne-Franche-Compté") ? "selected" : "" ?>>Bourgogne-Franche-Compté</option>
-				<option value="Bretagne">Bretagne</option>
-				<option value="Corse">Corse</option>
-				<option value="Centre-Val-de-Loire">Centre-Val-de-Loire</option>
-				<option value="Grands-Est">Grands-Est</option>
-				<option value="Hauts-de-France">Hauts-de-France</option>
-				<option value="Ile-de-France">Ile-de-France</option>
-				<option value="Normandie">Normandie</option>
-				<option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
-				<option value="Occitanie">Occitanie</option>
-				<option value="Provence-Alpes-Cote-d'Azur">Provence-Alpes-Cote-d'Azur</option>
-				<option value="Pays-de-la-loire">Pays-de-la-loire</option>
+				<option value="Bourgogne-Franche-Comté" <?= (($delegues['region']) == "Bourgogne-Franche-Comté") ? "selected" : "" ?>>Bourgogne-Franche-Comté</option>
+				<option value="Bretagne" <?= (($delegues['region']) == "Bretagne") ? "selected" : "" ?>>Bretagne</option>
+				<option value="Corse" <?= (($delegues['region']) == "Corse") ? "selected" : "" ?>>Corse</option>
+				<option value="Centre-Val-de-Loire" <?= (($delegues['region']) == "Centre-Val-de-Loire") ? "selected" : "" ?>>Centre-Val-de-Loire</option>
+				<option value="Grands-Est" <?= (($delegues['region']) == "Grands-Est") ? "selected" : "" ?>>Grands-Est</option>
+				<option value="Hauts-de-France" <?= (($delegues['region']) == "Hauts-de-France") ? "selected" : "" ?>>Hauts-de-France</option>
+				<option value="Ile-de-France" <?= (($delegues['region']) == "Ile-de-France") ? "selected" : "" ?>>Ile-de-France</option>
+				<option value="Normandie" <?= (($delegues['region']) == "Normandie") ? "selected" : "" ?>>Normandie</option>
+				<option value="Nouvelle-Aquitaine" <?= (($delegues['region']) == "Nouvelle-Aquitaine") ? "selected" : "" ?>>Nouvelle-Aquitaine</option>
+				<option value="Occitanie" <?= (($delegues['region']) == "Occitanie") ? "selected" : "" ?>>Occitanie</option>
+				<option value="Provence-Alpes-Cote-d'Azur" <?= (($delegues['region']) == "Provence-Alpes-Cote-d'Azur") ? "selected" : "" ?>>Provence-Alpes-Cote-d'Azur</option>
+				<option value="Pays-de-la-loire" <?= (($delegues['region']) == "Pays-de-la-loire") ? "selected" : "" ?>>Pays-de-la-loire</option>
 			</select>
 
 			<label for="departements">Départements d'exercices (Sous la forme : "00 - 00 - 00")</label>
