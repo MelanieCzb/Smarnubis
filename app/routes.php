@@ -37,13 +37,6 @@
 
 			['GET', '/gardesAstreintes', 'textes#gardesAstreintes', 'gardesAstreintes'],
 
-		// Templates/news
-			['GET', '/archives', 'news#archives', 'archives'],
-
-			['GET', '/newsletter', 'news#newsletter', 'newsletter'],
-
-			['GET', '/news', 'news#news', 'news'],
-
 		// Templates/xxxxx
 			['GET', '/statutPH', 'xxxxx#statutPH', 'statutPH'],
 
@@ -81,6 +74,13 @@
 			['GET', '/agenda', 'contacts#agenda', 'agenda'],
 
 			['GET', '/liste', 'contacts#liste', 'liste'],
+
+		// Templates/news
+			['GET', '/archives', 'news#archives', 'archives'],
+
+			['GET', '/newsletter', 'news#newsletter', 'newsletter'],
+
+			['GET', '/news', 'news#news', 'news'],
 
 		// Templates/administration
 			['GET|POST', '/login', 'Administration#login', 'login'],

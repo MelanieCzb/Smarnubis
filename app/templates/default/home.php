@@ -1,6 +1,26 @@
 <?php $this->layout('layout', ['title' => 'Smarnubis']) ?>
 
 <?php $this->start('main_content') ?>
+ <!-- SLIDER -->
+                <div class="jcarousel-wrapper">
+                <!--La taille originale des img est 600x400-->
+                    <div class="jcarousel">
+                        <ul>
+                            <li><img src="<?= $this->assetUrl('img/slider-3.png') ?>" alt=""></li>
+                            <li><img src="<?= $this->assetUrl('img/slider-4.png') ?>" alt=""></li>
+                            <li><img src="<?= $this->assetUrl('img/slider-5.png') ?>" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="fa fa-arrow-circle-left"></a>
+                    <a href="#" class="fa fa-arrow-circle-right"></a>
+
+                    <p class="jcarousel-pagination"></p>
+                </div>     
+        </header>
+        
+        <main>
+
 	   <h1>Le Syndicat des Médecins Anesthésistes-Réanimateurs<span> Non-Universitaire</span></h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.

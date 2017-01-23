@@ -47,7 +47,7 @@ class SmarnuController extends Controller
 		$this->show('smarnu/histoireSmarnu');
 	}
 
-	public function vigilanceRisque()
+	public function vigilanceRisques()
 	{
 		$this->show('smarnu/formulaireVigilance');
 	}

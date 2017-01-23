@@ -36,32 +36,32 @@
         <!-- MENU -->
             <nav class="stellarnav"> 
                 <ul>
-                    <li><img src="<?= $this->assetUrl('img/logo-smarnubis.png') ?>" alt=""></li>
-                    <li><a href="">Le Smarnubis</a>
+                    <li><a href="<?= $this->url('home') ?>"><img src="<?= $this->assetUrl('img/logo-smarnubis.png') ?>" alt=""></a></li>
+                    <li><a href="<?= $this->url('home') ?>">Le Smarnubis</a>
                         <ul>
                             <li><a href="#">Qui sommes-nous?</a>
                                 <ul>
-                                    <li><a href="">Délégués régionaux</a></li> 
-                                    <li><a href="">Conseil d'administration</a></li> 
-                                    <li><a href="">Compte rendu des réunions</a></li> 
-                                    <li><a href="">Statuts et réglément intérieur</a></li> 
-                                    <li><a href="">Com. Statutaire</a></li> 
-                                    <li><a href="">Histoire du SMARNU</a></li> 
+                                    <li><a href="<?= $this->url('deleguesRegionaux') ?>">Délégués régionaux</a></li> 
+                                    <li><a href="<?= $this->url('conseilAdministration') ?>">Conseil d'administration</a></li> 
+                                    <li><a href="<?= $this->url('crReunion') ?>">Compte rendu des réunions</a></li> 
+                                    <li><a href="<?= $this->url('regInterieur') ?>">Statuts et réglément intérieur</a></li> 
+                                    <li><a href="<?= $this->url('comStatutaire') ?>">Com. Statutaire</a></li> 
+                                    <li><a href="<?= $this->url('histoireSmarnu') ?>">Histoire du SMARNU</a></li> 
                                 </ul>
                             </li>
-                            <li><a href="">Lettre Syndicale</a></li>
-                            <li><a href="">Vigilance Risques !</a></li>
-                            <li><a href="">Liste des partenaires</a></li>
-                            <li><a href="">Liens</a></li>
+                            <li><a href="<?= $this->url('lettreSyndicale') ?>">Lettre Syndicale</a></li>
+                            <li><a href="<?= $this->url('vigilanceRisques') ?>">Vigilance Risques !</a></li>
+                            <li><a href="<?= $this->url('partenaires') ?>">Liste des partenaires</a></li>
+                            <li><a href="<?= $this->url('liens') ?>">Liens</a></li>
                         </ul>
                     </li>
 
                     <li><a href="">Textes de Loi</a>
                         <ul>
-                            <li><a href="">Nouveau textes</a></li>
-                            <li><a href="">Textes européens</a></li>
-                            <li><a href="">Emoluments</a></li>
-                            <li><a href="">Gardes/Astreintes</a></li>
+                            <li><a href="<?= $this->url('nouveauxTextes') ?>">Nouveau textes</a></li>
+                            <li><a href="<?= $this->url('textesEuropeens') ?>">Textes européens</a></li>
+                            <li><a href="<?= $this->url('emoluments') ?>">Emoluments</a></li>
+                            <li><a href="<?= $this->url('gardesAstreintes') ?>">Gardes/Astreintes</a></li>
                         </ul>
                     </li>
 
@@ -69,61 +69,43 @@
                         <ul>
                             <li><a href="#">Dossiers</a>
                                 <ul>
-                                    <li><a href="">Statut P.H.</a></li>
-                                    <li><a href="">Chirurgie - Plateaux - SROS3</a></li>
-                                    <li><a href="">Primes</a></li>
-                                    <li><a href="">Périnatalité</a></li>
-                                    <li><a href="">Démographie</a></li>
-                                    <li><a href="">Sécurité</a></li>
-                                    <li><a href="">Retraites</a></li>
-                                    <li><a href="">Permanence des soins</a></li>
-                                    <li><a href="">Urgences</a></li>
-                                    <li><a href="">Travail Additionnel (TTA)</a></li>
-                                    <li><a href="">Réanimation</a></li>
-                                    <li><a href="">FMC-EPP</a></li>
-                                    <li><a href="">RTT / CET</a></li>
+                                    <li><a href="<?= $this->url('statutPH') ?>">Statut P.H.</a></li>
+                                    <li><a href="<?= $this->url('chirurgiePlateaux') ?>">Chirurgie - Plateaux - SROS3</a></li>
+                                    <li><a href="<?= $this->url('primes') ?>">Primes</a></li>
+                                    <li><a href="<?= $this->url('perinatalite') ?>">Périnatalité</a></li>
+                                    <li><a href="<?= $this->url('demographie') ?>">Démographie</a></li>
+                                    <li><a href="<?= $this->url('securite') ?>">Sécurité</a></li>
+                                    <li><a href="<?= $this->url('retraites') ?>">Retraites</a></li>
+                                    <li><a href="<?= $this->url('permanenceSoins') ?>">Permanence des soins</a></li>
+                                    <li><a href="<?= $this->url('urgences') ?>">Urgences</a></li>
+                                    <li><a href="<?= $this->url('travailAdditionnel') ?>">Travail Additionnel (TTA)</a></li>
+                                    <li><a href="<?= $this->url('reanimation') ?>">Réanimation</a></li>
+                                    <li><a href="<?= $this->url('fmcEpp') ?>">FMC-EPP</a></li>
+                                    <li><a href="<?= $this->url('rttCet') ?>">RTT / CET</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Présentation MAPAR</a></li>
+                            <li><a href="<?= $this->url('mapar') ?>">Présentation MAPAR</a></li>
                         </ul>
                     </li>
 
                     <li><a href="">Contact & Adhésion</a>
                         <ul>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Adhésion</a></li>
-                            <li><a href="">Agenda</a></li>
+                            <li><a href="<?= $this->url('contacts') ?>">Contact</a></li>
+                            <li><a href="<?= $this->url('adhesion') ?>">Adhésion</a></li>
+                            <li><a href="<?= $this->url('agenda') ?>">Agenda</a></li>
                         </ul>
                     </li>
 
                     <li><a href="">News</a>
                         <ul>
-                            <li><a href="">Archives</a></li>
-                            <li><a href="">Newsletter</a></li>
-                            <li><a href="">News</a></li>
+                            <li><a href="<?= $this->url('archives') ?>">Archives</a></li>
+                            <li><a href="<?= $this->url('newsletter') ?>">Newsletter</a></li>
+                            <li><a href="<?= $this->url('news') ?>">News</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-        <!-- SLIDER -->
-                <div class="jcarousel-wrapper">
-                <!--La taille originale des img est 600x400-->
-                    <div class="jcarousel">
-                        <ul>
-                            <li><img src="<?= $this->assetUrl('img/slider-3.png') ?>" alt=""></li>
-                            <li><img src="<?= $this->assetUrl('img/slider-4.png') ?>" alt=""></li>
-                            <li><img src="<?= $this->assetUrl('img/slider-5.png') ?>" alt=""></li>
-                        </ul>
-                    </div>
-
-                    <a href="#" class="fa fa-arrow-circle-left"></a>
-                    <a href="#" class="fa fa-arrow-circle-right"></a>
-
-                    <p class="jcarousel-pagination"></p>
-                </div>     
-        </header>
-        
-        <main>
+       
 
 			<?= $this->section('main_content') ?>
 
