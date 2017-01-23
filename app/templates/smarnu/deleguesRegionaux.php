@@ -2,10 +2,47 @@
 
 <?php $this->start('main_content') ?>
 	<h2>Délégués régionaux.</h2>
+	<?php 
+		foreach ($delegues as $delegue) : ?>
+			<h3><?= $this->e($delegue['identite']) ?></h3>
+			<p><?= $this->e($delegue['region']) ?> 
+			<?php 
+				if(! empty($delegue['departements'])){
+					echo " (Depts : " .$delegue['departements']. ")";
+				} ?>
+			<?php 
+				if(! empty($delegue['telPrincipal'])){?>
+					Tel principal : <?= $delegue['telPrincipal'];
+				}
 
-			<section>Auvergne-Rhone-Alpes</section>
+				if(! empty($delegue['telSecondaire'])){?>
+					Tel principal : <?= $delegue['telPrincipal'];
+				}
 
-			<section>Bourgogne-Franche-Compte
+				if(! empty($delegue['telPortable'])){?>
+					Tel principal : <?= $delegue['telPrincipal'];
+				}
+
+				if(! empty($delegue['telBureau'])){?>
+					Tel principal : <?= $delegue['telPrincipal'];
+				}
+
+				?>
+
+			<?php
+
+			if(! empty($delegue['email'])){ ?>
+				email : <?= $delegue['email']; ?>
+				<?php }?>
+			
+		<?php endforeach ?>
+
+
+	
+
+			<!-- <section>Auvergne-Rhone-Alpes</section>
+
+			<section>Bourgogne-Franche-Compté
 				<article>
 					<aside>
 						Dr Jacqueline Bertrand (Dépts 21 - 58 - 71)
@@ -45,7 +82,7 @@
 						<a href="mailto:remi.brule@wanadoo.fr">Contacter par courriel</a>
 					</aside>
 				</article>
-			</section>
+			</section> 
 
 			<section>Corse</section>
 
@@ -157,7 +194,7 @@
 
 			<section>DOM : Reunion</section>
 
-			<section>DOM : Polynésie</section>
+			<section>DOM : Polynésie</section>-->
 
 
 

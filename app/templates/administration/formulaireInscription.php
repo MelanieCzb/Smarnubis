@@ -1,19 +1,6 @@
-<?php
+<?php $this->layout('layout', ['title' => 'Inscription']) ?>
 
-// require "traitement.php";
-//table users
-// include 'lib/connexion.php';
-
-?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Formulaire</title>
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-</head>
-<body>
+<?php $this->start('main_content') ?>
 
 	<h2>Formulaire d'inscription</h2>
 
@@ -49,3 +36,4 @@
 	
 </body>
 </html>
+<?php $this->stop('main_content') ?>

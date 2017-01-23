@@ -87,5 +87,10 @@
 			['GET|POST', '/logout', 'Administration#logout', 'logout'],
 
 			['GET|POST', '/inscription', 'Administration#inscription', 'inscription'],
+			
+			['GET|POST', '/ajoutDelegue', 'Administration#ajoutDelegue', 'ajoutDelegue'],
+			['GET|POST', '/gestionDelegue', 'Administration#gestionDelegue', 'gestionDelegue'],
+			['GET|POST', '/[i:id]/updateDelegue', 'Administration#updateDelegue', 'updateDelegue'],
+			['GET|POST', '/[i:id]/deleteDelegue', 'Administration#deleteDelegue', 'deleteDelegue'],
 
 	);
