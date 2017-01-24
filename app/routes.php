@@ -37,34 +37,34 @@
 
 			['GET', '/gardesAstreintes', 'textes#gardesAstreintes', 'gardesAstreintes'],
 
-		// Templates/xxxxx
-			['GET', '/statutPH', 'xxxxx#statutPH', 'statutPH'],
+		// Templates/documentation
+			['GET', '/statutPH', 'documentation#statutPH', 'statutPH'],
 
-			['GET', '/chirurgiePlateaux', 'xxxxx#chirurgiePlateaux', 'chirurgiePlateaux'],
+			['GET', '/chirurgiePlateaux', 'documentation#chirurgiePlateaux', 'chirurgiePlateaux'],
 
-			['GET', '/primes', 'xxxxx#primes', 'primes'],
+			['GET', '/primes', 'documentation#primes', 'primes'],
 
-			['GET', '/perinatalite', 'xxxxx#perinatalite', 'perinatalite'],
+			['GET', '/perinatalite', 'documentation#perinatalite', 'perinatalite'],
 
-			['GET', '/demographie', 'xxxxx#demographie', 'demographie'],
+			['GET', '/demographie', 'documentation#demographie', 'demographie'],
 
-			['GET', '/securite', 'xxxxx#securite', 'securite'],
+			['GET', '/securite', 'documentation#securite', 'securite'],
 
-			['GET', '/retraites', 'xxxxx#retraites', 'retraites'],
+			['GET', '/retraites', 'documentation#retraites', 'retraites'],
 
-			['GET', '/permanenceSoins', 'xxxxx#permanenceSoins', 'permanenceSoins'],
+			['GET', '/permanenceSoins', 'documentation#permanenceSoins', 'permanenceSoins'],
 
-			['GET', '/urgences', 'xxxxx#urgences', 'urgences'],
+			['GET', '/urgences', 'documentation#urgences', 'urgences'],
 
-			['GET', '/travailAdditionnel', 'xxxxx#travailAdditionnel', 'travailAdditionnel'],
+			['GET', '/travailAdditionnel', 'documentation#travailAdditionnel', 'travailAdditionnel'],
 
-			['GET', '/reanimation', 'xxxxx#reanimation', 'reanimation'],
+			['GET', '/reanimation', 'documentation#reanimation', 'reanimation'],
 
-			['GET', '/fmcEpp', 'xxxxx#fmcEpp', 'fmcEpp'],
+			['GET', '/fmcEpp', 'documentation#fmcEpp', 'fmcEpp'],
 
-			['GET', '/rttCet', 'xxxxx#rttCet', 'rttCet'],
+			['GET', '/rttCet', 'documentation#rttCet', 'rttCet'],
 
-			['GET', '/mapar', 'xxxxx#mapar', 'mapar'],
+			['GET', '/mapar', 'documentation#mapar', 'mapar'],
 
 		// Templates/contacts
 			['GET', '/contacts', 'contacts#contacts', 'contacts'],

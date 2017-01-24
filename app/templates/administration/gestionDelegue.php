@@ -11,7 +11,7 @@
 		foreach ($delegues as $delegue) : ?>
 
 		<h3><?= $this->e($delegue['identite']) ?></h3>
-		-- <a href="<?= $this->e($delegue['id']) ?>/updateDelegue">Modifier le délégué</a>
+		<a href="<?= $this->e($delegue['id']) ?>/updateDelegue">Modifier le délégué</a>
 		-- <a href="<?= $this->e($delegue['id']) ?>/deleteDelegue">Supprimer le délégué</a>
 			
 		<?php endforeach ?>

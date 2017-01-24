@@ -71,6 +71,9 @@ class AdministrationController extends Controller{
 					$user = $user_manager->getUserByUsernameOrEmail($_POST['myform']['username']);
 					$auth_manager->logUserIn($user);
 					$this->redirectToRoute('home');
+				}else{
+					$messages[] = "Problème d'authentification";
+					$this->show('administration/login', ['messages' => $messages]);
 				}
 			}else{
 			$this->show('Administration/login');
@@ -101,18 +104,18 @@ class AdministrationController extends Controller{
 			
 			// prenom requis
 			if( empty($_POST['myform']['identite']) ) {
-				$erreurs[] = "L'identité du délégué régional est obligatoire.";
+				$erreurs[] .= "L'identité du délégué régional est obligatoire.";
 			}
 
 			// région
 			if( empty($_POST['myform']['region'])) {
-				$erreurs[] = "La région n'a pas été séléctionnée";
+				$erreurs[] .= "La région n'a pas été séléctionnée";
 			}
 
 			if( ! empty($_POST['myform']['email']) ) {
 			
 				if( ! filter_var($_POST['myform']['email'], FILTER_VALIDATE_EMAIL) ) {
-					$erreurs[] = "L'email n'est pas d'une forme reconnue.";
+					$erreurs[] .= "L'email n'est pas d'une forme reconnue.";
 				}
 			}
 

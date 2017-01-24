@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Formulaire</title>
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-</head>
-<body>
+<?php $this->layout('layout', ['title' => 'Compte rendu de réunion']) ?>
 
-	<h2>Cellule vigilance</h2>
-
-	<main>
+<?php $this->start('main_content') ?>
 
 		<?php
 			if(! empty($erreurs)) { ?>
@@ -32,8 +22,5 @@
 			<textarea name="message">Votre message</textarea>
 			<input type="submit" name="envoyer" value="Envoyer">
 		</form>
-
-	</main>
-	
-</body>
-</html>
+		
+<?php $this->stop('main_content') ?>

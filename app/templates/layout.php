@@ -30,8 +30,12 @@
     <body>
         <header>
             <ul id="bttn-co">
-                <li><button>Inscription</button></li>
-                <li><button>Connexion</button></li>
+            <?php if (isset($_SESSION['user'])) { ?>
+                <li><a href="<?= $this->url('logout') ?>"><button>Deconnexion</button></a></li>
+            <?php }else{ ?>
+                <li><a href="<?= $this->url('inscription') ?>"><button>Inscription</button></a></li>
+                <li><a href="<?= $this->url('login') ?>"><button>Connexion</button></a></li>
+            <?php } ?>
             </ul>
         <!-- MENU -->
             <nav class="stellarnav"> 
@@ -65,7 +69,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="">Dossiers ?(à trouver)</a>
+                    <li><a href="">Documentation</a>
                         <ul>
                             <li><a href="#">Dossiers</a>
                                 <ul>
@@ -103,9 +107,18 @@
                             <li><a href="<?= $this->url('news') ?>">News</a></li>
                         </ul>
                     </li>
-                </ul>
+                
+                <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') { ?>
+               <li><a href="">Administration</a>
+                   <ul>
+                       <li><a href="<?= $this->url('gestionDelegue') ?>">Articles</a></li>
+                       <li><a href="<?= $this->url('gestionDelegue') ?>">Délégués régionaux</a></li>
+                   </ul>
+               </li>
+           <?php } ?> 
+           </ul>
             </nav>
-       
+        </header> 
 
 			<?= $this->section('main_content') ?>
 

@@ -2,8 +2,21 @@
 
 <?php $this->start('main_content') ?>
 	
-	<h2>Site du smarnubis</h2>
 	<h3>Connexion à l'espace privé :</h3>
+
+	<?php
+			if(! empty($messages)){ ?>
+				<div class="row" style="background-color: red;color: white;font-weight: bold;">
+					
+					<ul>
+						<?php 
+						foreach($messages as $message) { ?>
+							<li><?= $message ?></li>
+						<?php } ?>
+					</ul>
+				</div>
+		<?php } ?>
+
 
 	<form method="POST">
 		<label for="login">Votre login : </label>
