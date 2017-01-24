@@ -1,6 +1,20 @@
 <?php $this->layout('layout', ['title' => 'Gardes et astreintes']) ?>
 
 <?php $this->start('main_content') ?>
+
+<section>
+
+	<?php
+		foreach ($articles as $article) : ?>
+		<article>
+			<h3><?= $this->e($article['titre']) ?></h3>
+			<p><?= $this->e($article['contenu']) ?></p>
+
+			<a href="<?= $this->assetUrl('uploads/'.$this->e($article['fichier']).''); ?>" target="_blank">Télécharger le PDF</a>
+		</article>
+			
+		<?php endforeach ?>
+
+	</section>
 	
-<p>Page 'Gardes et astreintes' en construction</p>
 <?php $this->stop('main_content') ?>

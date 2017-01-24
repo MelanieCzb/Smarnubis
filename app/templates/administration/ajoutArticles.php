@@ -44,8 +44,12 @@
 			<label for="categorie" >Région d'exercice :</label>
 			<select name="myform[categorie]">
 				<option value="">Sélectionner la catégorie de l'article.</option>
-				<option value="texte-de-loi">texte-de-loi</option>
-				<option value="nouveau-texte">nouveau-texte</option>
+				<option value=""></option>
+				<option value=""> --- Textes de loi --- </option>
+				<option value="nouveaux-textes">Nouveaux textes</option>
+				<option value="textes-europeens">Textes europeens</option>
+				<option value="emoluments">Emoluments</option>
+				<option value="gardes-astreintes">Gardes Astreintes</option>
 			</select>
 
 			

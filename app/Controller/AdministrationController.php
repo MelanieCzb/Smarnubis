@@ -221,11 +221,20 @@ class AdministrationController extends Controller{
 				$erreurs[] = "Veuillez séléctionner une catégorie d'article";
 			}
 
+			$uploads_dir = '/var/www/public/assets/uploads';
+			foreach ($_FILES["myform"]["error"] as $key => $error) {
+				if ($error == UPLOAD_ERR_OK) {
+					$tmp_name = $_FILES["myform"]["tmp_name"][$key];
+					$name = $_FILES["myform"]["name"][$key];
+					move_uploaded_file($tmp_name, "$uploads_dir/$name");
+				}
+			}
+
 			if(empty($erreurs)) {
 
 				$manager = new ArticleManager();
 				$manager->setTable('articles');
-				$article = $manager->insert($_POST['myform']);
+				$article = $manager->insert(array_merge($_POST['myform'],['fichier' => $name]));
 				$this->redirectToRoute('home');
 			}
 			$this->show('administration/ajoutArticles', ['erreurs' => $erreurs]);
