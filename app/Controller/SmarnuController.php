@@ -3,6 +3,8 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Manager\DeleguesRegionauxManager;
+
 
 class SmarnuController extends Controller
 {
@@ -14,7 +16,10 @@ class SmarnuController extends Controller
 
 	public function deleguesRegionaux()
 	{
-		$this->show('smarnu/deleguesRegionaux');
+		$manager = new DeleguesRegionauxManager();
+		$manager->setTable('delegues_regionaux');
+		$delegues = $manager->findAll();
+		$this->show('smarnu/deleguesRegionaux', ['delegues' => $delegues]);
 	}
 
 	public function conseilAdministration()
@@ -40,6 +45,26 @@ class SmarnuController extends Controller
 	public function histoireSmarnu()
 	{
 		$this->show('smarnu/histoireSmarnu');
+	}
+
+	public function vigilanceRisques()
+	{
+		$this->show('smarnu/formulaireVigilance');
+	}
+
+	public function lettreSyndicale()
+	{
+		$this->show('smarnu/lettreSyndicale');
+	}
+
+	public function liens()
+	{
+		$this->show('smarnu/liens');
+	}
+
+	public function partenaires()
+	{
+		$this->show('smarnu/partenaires');
 	}
 
 }

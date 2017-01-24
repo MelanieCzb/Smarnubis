@@ -37,13 +37,6 @@
 
 			['GET', '/gardesAstreintes', 'textes#gardesAstreintes', 'gardesAstreintes'],
 
-		// Templates/news
-			['GET', '/archives', 'news#archives', 'archives'],
-
-			['GET', '/newsletter', 'news#newsletter', 'newsletter'],
-
-			['GET', '/news', 'news#news', 'news'],
-
 		// Templates/xxxxx
 			['GET', '/statutPH', 'xxxxx#statutPH', 'statutPH'],
 
@@ -82,9 +75,22 @@
 
 			['GET', '/liste', 'contacts#liste', 'liste'],
 
-		// Templates/administration
-			['GET', '/login', 'Administration#login', 'login'],
+		// Templates/news
+			['GET', '/archives', 'news#archives', 'archives'],
 
-			['GET', '/inscription', 'Administration#inscription', 'inscription'],
+			['GET', '/newsletter', 'news#newsletter', 'newsletter'],
+
+			['GET', '/news', 'news#news', 'news'],
+
+		// Templates/administration
+			['GET|POST', '/login', 'Administration#login', 'login'],
+			['GET|POST', '/logout', 'Administration#logout', 'logout'],
+
+			['GET|POST', '/inscription', 'Administration#inscription', 'inscription'],
+			
+			['GET|POST', '/ajoutDelegue', 'Administration#ajoutDelegue', 'ajoutDelegue'],
+			['GET|POST', '/gestionDelegue', 'Administration#gestionDelegue', 'gestionDelegue'],
+			['GET|POST', '/[i:id]/updateDelegue', 'Administration#updateDelegue', 'updateDelegue'],
+			['GET|POST', '/[i:id]/deleteDelegue', 'Administration#deleteDelegue', 'deleteDelegue'],
 
 	);
