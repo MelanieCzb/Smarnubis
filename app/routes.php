@@ -92,5 +92,8 @@
 			['GET|POST', '/gestionDelegue', 'Administration#gestionDelegue', 'gestionDelegue'],
 			['GET|POST', '/[i:id]/updateDelegue', 'Administration#updateDelegue', 'updateDelegue'],
 			['GET|POST', '/[i:id]/deleteDelegue', 'Administration#deleteDelegue', 'deleteDelegue'],
+			
+			['GET|POST', '/gestionArticles', 'Administration#gestionArticles', 'gestionArticles'],
+			['GET|POST', '/ajoutArticles', 'Administration#ajoutArticles', 'ajoutArticles'],
 
 	);

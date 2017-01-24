@@ -111,7 +111,7 @@
                 <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') { ?>
                <li><a href="">Administration</a>
                    <ul>
-                       <li><a href="<?= $this->url('gestionDelegue') ?>">Articles</a></li>
+                       <li><a href="<?= $this->url('gestionArticles') ?>">Articles</a></li>
                        <li><a href="<?= $this->url('gestionDelegue') ?>">Délégués régionaux</a></li>
                    </ul>
                </li>
