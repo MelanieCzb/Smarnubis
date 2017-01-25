@@ -41,7 +41,7 @@
 			<label for="fichier">Fichier associé</label>
 			<input type="file" name="myform[fichier]">
 
-			<label for="categorie" >Région d'exercice :</label>
+			<label for="categorie" >Catégorie de l'article :</label>
 			<select name="myform[categorie]">
 				<option value="">Sélectionner la catégorie de l'article.</option>
 				<option value=""></option>
@@ -49,7 +49,7 @@
 				<option value="nouveaux-textes">Nouveaux textes</option>
 				<option value="textes-europeens">Textes europeens</option>
 				<option value="emoluments">Emoluments</option>
-				<option value="gardes-astreintes">Gardes Astreintes</option>
+				<option value="gardes-astreintes">Gardes & Astreintes</option>
 			</select>
 
 			

@@ -194,53 +194,98 @@ class AdministrationController extends Controller{
 
 // Gestion des articles
 	// Affichage des articles existants
-	public function gestionArticles(){
-		$this->allowTo('admin');
-		
-		$manager = new ArticleManager();
-		$articles = $manager->findAll();
-		$this->show('administration/gestionArticles', ['articles' => $articles]);
-	}
-
-	// Ajouter un article
-	public function ajoutArticles(){
-
-		$erreurs = [];
-
-		if(isset($_POST['ajouter'])) { //traitement
+		public function gestionArticles(){
+			$this->allowTo('admin');
 			
-			if (empty($_POST['myform']['titre'])) {
-				$erreurs[] = "Vous n'avez pas renseigner de titre";
-			}
-
-			if (empty($_POST['myform']['contenu'])) {
-				$erreurs[] = "Le contenu de l'article est vide";
-			}
-
-			if ($_POST['myform']['categorie'] == "") {
-				$erreurs[] = "Veuillez séléctionner une catégorie d'article";
-			}
-
-			$uploads_dir = '/var/www/public/assets/uploads';
-			foreach ($_FILES["myform"]["error"] as $key => $error) {
-				if ($error == UPLOAD_ERR_OK) {
-					$tmp_name = $_FILES["myform"]["tmp_name"][$key];
-					$name = $_FILES["myform"]["name"][$key];
-					move_uploaded_file($tmp_name, "$uploads_dir/$name");
-				}
-			}
-
-			if(empty($erreurs)) {
-
-				$manager = new ArticleManager();
-				$manager->setTable('articles');
-				$article = $manager->insert(array_merge($_POST['myform'],['fichier' => $name]));
-				$this->redirectToRoute('home');
-			}
-			$this->show('administration/ajoutArticles', ['erreurs' => $erreurs]);
-		} else {
-			$this->show('administration/ajoutArticles', ['erreurs' => $erreurs]);
+			$manager = new ArticleManager();
+			$articles = $manager->findAll();
+			$this->show('administration/gestionArticles', ['articles' => $articles]);
 		}
 
+	// Ajouter un article
+		public function ajoutArticles(){
+
+			$erreurs = [];
+
+			if(isset($_POST['ajouter'])) { //traitement
+				
+				if (empty($_POST['myform']['titre'])) {
+					$erreurs[] = "Vous n'avez pas renseigner de titre";
+				}
+
+				if (empty($_POST['myform']['contenu'])) {
+					$erreurs[] = "Le contenu de l'article est vide";
+				}
+
+				if ($_POST['myform']['categorie'] == "") {
+					$erreurs[] = "Veuillez séléctionner une catégorie d'article";
+				}
+
+				$uploads_dir = '/var/www/public/assets/uploads';
+				foreach ($_FILES["myform"]["error"] as $key => $error) {
+					if ($error == UPLOAD_ERR_OK) {
+						$tmp_name = $_FILES["myform"]["tmp_name"][$key];
+						$name = $_FILES["myform"]["name"][$key];
+						move_uploaded_file($tmp_name, "$uploads_dir/$name");
+					}
+				}
+
+				if(empty($erreurs)) {
+
+					$manager = new ArticleManager();
+					$manager->setTable('articles');
+					$article = $manager->insert(array_merge($_POST['myform'],['fichier' => $name]));
+					$this->redirectToRoute('gestionArticles');
+				}
+				$this->show('administration/ajoutArticles', ['erreurs' => $erreurs]);
+			} else {
+				$this->show('administration/ajoutArticles', ['erreurs' => $erreurs]);
+			}
+		}
+
+	// Modification d'un article
+		public function modificationArticle($id){
+			if(isset($_POST['modifier'])){
+				$erreurs = [];
+
+				if(empty($_POST['myform']['titre'])){
+					$erreurs = "Le titre n'est pas renseigné.";
+				}
+
+				if(empty($_POST['myform']['contenu'])){
+					$erreurs = "Le contenu de l'article est vide.";
+				}
+
+				if(empty($_POST['myform']['categorie'])){
+					$erreurs = "Il faut séléctionner une catégorie pour que l'article soit répertorié.";
+				}
+
+					if(empty($erreurs)){
+						$manager = new ArticleManager();
+						$manager->setTable('articles');
+						$manager->update($_POST['myform'], $id);
+						$messages[] = "Les modifications sont enregistrées";
+						$this->redirectToRoute('gestionArticles', ['messages' => $messages]);
+					}else{
+						$this->redirectToRoute('modificationArticle', ['erreurs' => $erreurs]);
+					}
+				
+			}else{
+				$manager = new ArticleManager();
+				$manager->setTable('articles');
+				$article = $manager->find($id);
+				$this->show('administration/modificationArticle', ['article' => $article]);
+			}
+		}
+
+	// Supprimer un article
+		public function deleteArticle($id){
+		$this->allowTo('admin');
+		$manager = new ArticleManager();
+		$manager->setTable('articles');
+		$delegue = $manager->delete($id);
+
+		$this->redirectToRoute('gestionArticles', ['messages' => "L'article est supprimé."]);
+	
 	}
 }
