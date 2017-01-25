@@ -121,7 +121,8 @@
            <?php } ?> 
            </ul>
             </nav>
-        </header> 
+        </header>
+        <main> 
 
             <?= $this->section('main_content') ?>
 

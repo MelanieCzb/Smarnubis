@@ -1,9 +1,10 @@
-<?php $this->layout('layout', ['title' => 'Lettre syndicale']) ?>
+<?php $this->layout('layoutType', ['title' => 'Lettre syndicale']) ?>
 
 <?php $this->start('main_content') ?>
-	<h2>La lettre syndicale</h2>
+	<h1>La lettre syndicale</h1>
 
 	<section>
+		
 		<ul>
 			<li><a href="#">Lettre syndicale n54</a></li>
 			<li><a href="#">Lettre syndicale n53</a></li>

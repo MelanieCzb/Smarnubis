@@ -1,12 +1,12 @@
-<?php $this->layout('layout', ['title' => 'Liens']) ?>
+<?php $this->layout('layoutType', ['title' => 'Liens']) ?>
 
 <?php $this->start('main_content') ?>
-	<h2>Liens utiles</h2>
+	<h1>Liens utiles</h1>
 
 	<section>
 		
 		<ul>
-			<p>Sites professionnels</p>
+			<h2>Sites professionnels</h2>
 			<li>Société Française d’Anesthésie-Réanimation : <a href=" http://sfar.org/">SFAR</a></li>
 			<li>Collège Français d’Anesthésie-Réanimation : <a href="http://cfar.org/">CFAR</a></li>
 			<li>European Academy of Anaesthesiology : <a href="https://www.esahq.org/">EAA</a></li>
@@ -15,7 +15,7 @@
 		</ul>
 	
 		<ul>
-			<p>Sites Syndicaux</p>
+			<h2>Sites Syndicaux</h2>
 			<li>Association des Jeunes Anesthésistes Réanimateurs <a href="http://www.ajar-online.fr/">AJAR</a></li>
 			<li>Syndicat National des Praticiens Hospitaliers d’Anesthésie-Réanimation <a href="http://www.snphar.com/">SNPHAR</a></li>
 			<li>Fédération Nationale des Praticiens des Hôpitaux Généraux <a href="https://www.sphp.fr/">SPHP</a></li>
@@ -25,7 +25,7 @@
 		</ul>
 		
 		<ul>
-			<p>Sites d'Anesthésie</p>
+			<h2>Sites d'Anesthésie</h2>
 			<li>Association Analgésie et Anesthésie Loco-Régionale Francophone <a href="http://www.i-alr.com/">I-ALR</a></li>
 			<li>Société Française d’Etude de la douleur <a href="http://www.sfetd-douleur.org/">SFETD</a></li>
 			<li>Gestion des Voies Aériennes: <a href="http://sfar.org/gestion-des-voies-aeriennes-en-reanimation/">Lien SFAR</a></li>
@@ -34,32 +34,30 @@
 		</ul>
 
 		<ul>
-			<p>Sites professionnels des autres spécialités</p>
+			<h2>Sites professionnels des autres spécialités</h2>
 			<li>Collège National des Gynécologues et Obstétriciens Français <a href="http://www.cngof.fr/">CNGOF</a></li>
 		</ul> 
 	
 		<ul>
-			<p>Sites Administratifs</p>
-			<li>Secrétariat à la santé: www.sante.gouv.fr</li>
-			<li>Agence Nationale d’Accréditation et d’Evaluation: www.anaes.fr</li>
-			<li>Journal Officiel : www.journal-officiel.gouv.fr</li>
-			<li>Textes règlementaires: www.legifrance.gouv.fr</li>
+			<h2>Sites Administratifs</h2>
+			<li>Secrétariat à la santé <a href="http://social-sante.gouv.fr/">Ministère de la santé</a></li>
+			<li>Haute Autorité de Santé <a href="http://www.has-sante.fr/portail/">HAS</a></li>
+			<li>Journal Officiel <a href="http://www.journal-officiel.gouv.fr/">Journal Officiel</a></li>
+			<li>Textes règlementaires <a href="https://www.legifrance.gouv.fr/"> Légifrance</a></li>
 		</ul>
 
 		<ul>
-			<p>Revues Professionnelles</p>
-			<li>Annales Françaises d’Anesthésie-Réanimation (AFAR): www.elsevier.fr</li>
-			<li>Encyclopédie Médico-chirurgicale: www.emc.tm.fr</li>
-			<li>Le Praticien en Anesthésie-Réanimation: www.e2med.com/par
-		Réanimation (Journal de la SRLF): www.elsevier.fr</li>
-			<li>Anesthesiology (Journal of the ASA): www.anesthesiology.org</li>
-			<li>New England Journal of Medicine: www.nejm.org</li>
+			<h2>Revues Professionnelles</h2>
+			<li>Annales Françaises d’Anesthésie-Réanimation <a href="https://www.elsevier-masson.fr/">Elsevier-Masson</a></li>
+			<li>Encyclopédie Médico-chirurgicale <a href="http://www.em-consulte.com/em/pages/encyclopedie-medicale/encyclopedie-medico-chirurgicale.html">EMC</a></li>
+			<li>Anesthesiology (Journal of the ASA - english)<a href="http://anesthesiology.pubs.asahq.org/journal.aspx">ASA</a></li>
+			<li>New England Journal of Medicine (english) <a href="http://www.nejm.org/">NEJM</a></li>
 		</ul>
 
 		<ul>
-			<p>Presse</p>
-			<li>Quotidien du Médecin: www.quotimed.com</li>
-			<li>Le Monde: www.lemonde.fr</li>
+			<h2>Presse</h2>
+			<li>Quotidien du Médecin <a href="http://www.lequotidiendumedecin.fr/">Quotimed</a></li>
+			<li>Le Monde <a href="http://www.lemonde.fr/">Le Monde</a></li>
 		</ul>
 
 	</section>

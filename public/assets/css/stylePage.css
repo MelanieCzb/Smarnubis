@@ -7,7 +7,6 @@ main section {
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
     border-radius: .5rem;
-    text-decoration: none;
 }
 
 main article {
@@ -21,4 +20,8 @@ section {
 ul {
     margin-bottom: 2rem;
     padding: 2rem;
+}
+
+a {
+    text-decoration: none;
 }
