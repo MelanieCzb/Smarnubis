@@ -22,6 +22,10 @@ ul {
     padding: 2rem;
 }
 
+li{
+    margin-bottom: 1rem;
+}
+
 /*p {
     font-size: 2rem;
     font-weight: 700;
@@ -55,4 +59,12 @@ main textarea{
 main select{
     text-align: center;
 
+}
+
+.adhesion{
+    text-align: center;
+}
+
+.adhesion p{
+    margin-bottom: 4rem;
 }
