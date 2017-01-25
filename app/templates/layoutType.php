@@ -56,7 +56,12 @@
                             </li>
                             <li><a href="<?= $this->url('lettreSyndicale') ?>">Lettre Syndicale</a></li>
                             <li><a href="<?= $this->url('vigilanceRisques') ?>">Vigilance Risques !</a></li>
-                            <li><a href="<?= $this->url('partenaires') ?>">Liste des partenaires</a></li>
+                            <li><a href="#">Listes des partenaires</a>
+                                <ul>
+                                    <li><a href="<?= $this->url('conseilOrdre') ?>">Conseil de l'Ordre</a></li> 
+                                    <li><a href="<?= $this->url('sfar') ?>">SFAR</a></li> 
+                                </ul>
+                            </li>
                             <li><a href="<?= $this->url('liens') ?>">Liens</a></li>
                         </ul>
                     </li>
@@ -78,7 +83,6 @@
                                     <li><a href="<?= $this->url('chirurgiePlateaux') ?>">Chirurgie - Plateaux - SROS3</a></li>
                                     <li><a href="<?= $this->url('primes') ?>">Primes</a></li>
                                     <li><a href="<?= $this->url('perinatalite') ?>">Périnatalité</a></li>
-                                    <li><a href="<?= $this->url('demographie') ?>">Démographie</a></li>
                                     <li><a href="<?= $this->url('securite') ?>">Sécurité</a></li>
                                     <li><a href="<?= $this->url('retraites') ?>">Retraites</a></li>
                                     <li><a href="<?= $this->url('permanenceSoins') ?>">Permanence des soins</a></li>

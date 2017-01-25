@@ -55,6 +55,8 @@
                                     <li><a href="<?= $this->url('conseilOrdre') ?>">Conseil de l'Ordre</a></li> 
                                     <li><a href="<?= $this->url('sfar') ?>">SFAR</a></li> 
                                 </ul>
+                            </li>
+                            <li><a href="<?= $this->url('liens') ?>">Liens</a></li>    
                         </ul>
                     </li>
 
