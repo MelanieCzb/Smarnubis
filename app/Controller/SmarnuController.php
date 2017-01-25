@@ -5,6 +5,7 @@ namespace Controller;
 use \W\Controller\Controller;
 use \Manager\DeleguesRegionauxManager;
 use \Manager\ArticleManager;
+use \Manager\ConseilManager;
 
 
 class SmarnuController extends Controller
@@ -25,7 +26,10 @@ class SmarnuController extends Controller
 
 	public function conseilAdministration()
 	{
-		$this->show('smarnu/conseilAdministration');
+		$manager = new ConseilManager();
+		$manager->setTable('conseil_administration');
+		$delegues = $manager->findAll();
+		$this->show('smarnu/conseilAdministration', ['delegues' => $delegues]);
 	}
 
 	public function crReunion()
