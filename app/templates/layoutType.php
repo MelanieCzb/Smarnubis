@@ -172,8 +172,6 @@
         <script type="text/javascript" src="<?= $this->assetUrl('js/jcarousel.basic.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/articlesHome.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/jsAccordeon.js') ?>"></script> 
-
-
     </body>
 </html>
 
