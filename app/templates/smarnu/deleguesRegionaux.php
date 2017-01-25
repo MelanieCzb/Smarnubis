@@ -1,18 +1,24 @@
-<?php $this->layout('layout', ['title' => 'Le smarnubis']) ?>
+<?php $this->layout('layoutType', ['title' => 'Le smarnubis']) ?>
 
 <?php $this->start('main_content') ?>
-	<h2>Délégués régionaux.</h2>
+	<h1>Délégués régionaux.</h1>
 	<section>
 	
 		<?php 
 			foreach ($delegues as $delegue) : ?>
-				<h3><?= $this->e($delegue['identite']) ?></h3>
+				<article>
+				<h2><?= $this->e($delegue['identite']) ?></h2>
 				<p><?= $this->e($delegue['region']) ?> 
 				<?php 
 					if(! empty($delegue['departements'])){
 						echo " (Depts : " .$delegue['departements']. ")";
-					} ?>
-				<?php 
+					} 
+
+					if(! empty($delegue['lieuExercice'])){ ?>
+						<p>Lieu d'exercice : <?= $delegue['lieuExercice'] ?></p>
+					<?php } ?>
+
+					<?php
 					if(! empty($delegue['telPrincipal'])){?>
 						Tel principal : <?= $delegue['telPrincipal'];
 					}
@@ -29,14 +35,10 @@
 						Tel principal : <?= $delegue['telPrincipal'];
 					}
 
-					?>
-
-				<?php
-
 				if(! empty($delegue['email'])){ ?>
 					email : <?= $delegue['email']; ?>
 					<?php }?>
-				
+			</article>
 			<?php endforeach ?>
 	</section>
 

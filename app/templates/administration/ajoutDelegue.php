@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Ajouter un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Ajouter un délégué régional']) ?>
 
 <?php $this->start('main_content') ?>
 

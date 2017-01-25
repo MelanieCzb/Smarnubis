@@ -95,5 +95,8 @@
 			
 			['GET|POST', '/gestionArticles', 'Administration#gestionArticles', 'gestionArticles'],
 			['GET|POST', '/ajoutArticles', 'Administration#ajoutArticles', 'ajoutArticles'],
+			['GET|POST', '/[i:id]/modificationArticle', 'Administration#modificationArticle', 'modificationArticle'],
+			['GET|POST', '/[i:id]/deleteArticle', 'Administration#deleteArticle', 'deleteArticle'],
+
 
 	);

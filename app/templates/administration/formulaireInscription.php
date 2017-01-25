@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Inscription']) ?>
+<?php $this->layout('layoutType', ['title' => 'Inscription']) ?>
 
 <?php $this->start('main_content') ?>
 
