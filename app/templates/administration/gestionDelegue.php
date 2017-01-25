@@ -1,22 +1,23 @@
-<?php $this->layout('layout', ['title' => 'Liste des délégués régionaux']) ?>
+<?php $this->layout('layoutType', ['title' => 'Liste des délégués régionaux']) ?>
 
 <?php $this->start('main_content') ?>
 
-	<h2>Liste des délégués</h2>
+	<h1>Liste des délégués</h1>
 
 	<main>
-	<a href="/ajoutDelegue">Ajouter un délégué</a>
+		<section>
+			<a href="/ajoutDelegue">Ajouter un délégué</a>
 
-	<?php
-		foreach ($delegues as $delegue) : ?>
+			<?php
+				foreach ($delegues as $delegue) : ?>
 
-		<h3><?= $this->e($delegue['identite']) ?></h3>
-		<a href="<?= $this->e($delegue['id']) ?>/updateDelegue">Modifier le délégué</a>
-		-- <a href="<?= $this->e($delegue['id']) ?>/deleteDelegue">Supprimer le délégué</a>
-			
-		<?php endforeach ?>
+				<h2><?= $this->e($delegue['identite']) ?></h2>
+				<a href="<?= $this->e($delegue['id']) ?>/updateDelegue">Modifier le délégué</a>
+				-- <a href="<?= $this->e($delegue['id']) ?>/deleteDelegue">Supprimer le délégué</a>
+					
+				<?php endforeach ?>
 		
-		
+		</section>
 	</main>
 	
 </body>

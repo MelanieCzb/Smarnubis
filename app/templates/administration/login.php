@@ -1,9 +1,10 @@
-<?php $this->layout('layout', ['title' => 'Connexion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Connexion']) ?>
 
 <?php $this->start('main_content') ?>
 	
-	<h3>Connexion à l'espace privé :</h3>
+	<h1>Connexion à l'espace privé :</h1>
 
+	<section>
 	<?php
 			if(! empty($messages)){ ?>
 				<div class="row" style="background-color: red;color: white;font-weight: bold;">
@@ -28,6 +29,8 @@
 		<input type="submit" name="connexion" value="Connexion">
 	</form>
 
-	<h3>Si vous n'avez pas d'espace, créez le ici : <a href="/inscription">Inscription</a></h3>
+	<h2>Si vous n'avez pas d'espace, créez le ici : <a href="/inscription">Inscription</a></h2>
+
+</section>
 
 <?php $this->stop('main_content') ?>

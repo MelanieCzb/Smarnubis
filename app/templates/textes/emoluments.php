@@ -1,16 +1,18 @@
-<?php $this->layout('layout', ['title' => 'Emoluments']) ?>
+<?php $this->layout('layoutType', ['title' => 'Emoluments']) ?>
 
 <?php $this->start('main_content') ?>
+
 <section>
+	<h1>Emoluments</h1>
 
 	<?php
 		foreach ($articles as $article) : ?>
-		<article>
-			<h3><?= $this->e($article['titre']) ?></h3>
-			<p><?= $this->e($article['contenu']) ?></p>
 
-			<a href="<?= $this->assetUrl('uploads/'.$this->e($article['fichier']).''); ?>" target="_blank">Télécharger le PDF</a>
-		</article>
+			<button class="accordion"><h2><?= $this->e($article['titre']) ?></h2></button>
+				<div class="panel">
+  					<p><?= $this->e($article['contenu']) ?></p>
+  					<a href="<?= $this->assetUrl('uploads/'.$this->e($article['fichier']).''); ?>" target="_blank">Télécharger le PDF</a>
+				</div>
 			
 		<?php endforeach ?>
 

@@ -4,6 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \Manager\DeleguesRegionauxManager;
+use \Manager\ArticleManager;
 
 
 class SmarnuController extends Controller
@@ -29,7 +30,11 @@ class SmarnuController extends Controller
 
 	public function crReunion()
 	{
-		$this->show('smarnu/crReunion');
+		$categorie = "cr-reunion";
+		$manager = new ArticleManager();
+		$articles = $manager->findAllByCategory($categorie);
+
+		$this->show('smarnu/crReunion', ['articles' => $articles]);
 	}
 
 	public function regInterieur()
@@ -54,7 +59,11 @@ class SmarnuController extends Controller
 
 	public function lettreSyndicale()
 	{
-		$this->show('smarnu/lettreSyndicale');
+		$categorie = "lettre-syndicales";
+		$manager = new ArticleManager();
+		$articles = $manager->findAllByCategory($categorie);
+
+		$this->show('smarnu/lettreSyndicale', ['articles' => $articles]);
 	}
 
 	public function liens()

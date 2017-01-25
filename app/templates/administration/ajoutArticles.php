@@ -1,9 +1,10 @@
-<?php $this->layout('layout', ['title' => 'Ajouter un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Ajouter un délégué régional']) ?>
 
 <?php $this->start('main_content') ?>
 
 	<h2>Ajouter un article</h2>
 
+	<section>
 		<?php
 			if(!empty($erreurs)){ ?>
 				<div class="row" style="background-color: red;color: white;font-weight: bold;">
@@ -50,12 +51,17 @@
 				<option value="textes-europeens">Textes europeens</option>
 				<option value="emoluments">Emoluments</option>
 				<option value="gardes-astreintes">Gardes & Astreintes</option>
+				<option value=""></option>
+				<option value=""> --- Smarnubis --- </option>
+				<option value="lettre-syndicale">Lettre syndicale</option>
+				<option value="cr-reunion">Compte rendu de réunion</option>
 			</select>
 
 			
 			
 			<input type="submit" name="ajouter" value="Ajouter l'article">
 		</form>
+	</section>
 
 	</main>
 	

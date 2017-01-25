@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Modifier un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -36,6 +36,10 @@
 				<option value="textes-europeens" <?= (($article['categorie']) == "textes-europeens") ? "selected" : "" ?>>Textes europeens</option>
 				<option value="emoluments" <?= (($article['categorie']) == "emoluments") ? "selected" : "" ?>>Emoluments</option>
 				<option value="gardes-astreintes" <?= (($article['categorie']) == "gardes-astreintes") ? "selected" : "" ?>>Gardes & Astreintes</option>
+				<option value=""></option>
+				<option value=""> --- Smarnubis --- </option>
+				<option value="lettre-syndicale" <?= (($article['categorie']) == "lettre-syndicale") ? "selected" : "" ?>>Lettre syndicale</option>
+				<option value="cr-reunion" <?= (($article['categorie']) == "cr-reunion") ? "selected" : "" ?>>Compte rendu de réunion</option>
 				
 			</select>
 
