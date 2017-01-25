@@ -32,6 +32,27 @@ a {
     text-decoration: none;
 }
 
+
 span{
     font-weight: bold;
+}
+
+main input, main textarea, main select{
+    width : 90%;
+    display: block;
+    margin: 0 auto 1rem auto; 
+}
+
+main label{
+    margin-bottom: 1rem; 
+    display: block;
+}
+
+main textarea{
+    height: 10rem;
+}
+
+main select{
+    text-align: center;
+
 }

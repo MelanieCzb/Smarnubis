@@ -17,11 +17,9 @@
         <!-- Ajout du css pour la page type -->
         <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/stylePage.css') ?>">
 
-        <!-- Intégration de Materialize -->
-            <!--Import Google Icon Font-->
-            <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-            <!--Import materialize.css-->
-            <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
+        <!-- Style accordéon -->
+        <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/styleAccordeon.css') ?>">
+
         
         <!-- CSS pour l'affichage des articles sur la HOME -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/styleArticles.css') ?>">
@@ -173,9 +171,8 @@
         <script type="text/javascript" src="<?= $this->assetUrl('dist/jquery.jcarousel.js') ?>"></script>
         <script type="text/javascript" src="<?= $this->assetUrl('js/jcarousel.basic.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/articlesHome.js') ?>"></script> 
+        <script type="text/javascript" src="<?= $this->assetUrl('js/jsAccordeon.js') ?>"></script> 
 
-        <!-- Intégration Materialize pour les articles sur la Home -->
-            <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
 
     </body>
 </html>
