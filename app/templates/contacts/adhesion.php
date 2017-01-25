@@ -1,6 +1,12 @@
-<?php $this->layout('layout', ['title' => 'Adhésion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Adhésion']) ?>
 
 <?php $this->start('main_content') ?>
-	
-<p>Page 'Adhésion' en construction</p>
+	<h1>Comment adhérer au Smarnubis ?</h1>
+
+    <p>Vous pouvez maintenant adhérer au Smarnubis directement en ligne ! Il suffit de remplir le formulaire ci-dessous :</p>
+
+    <iframe id="haWidget" src="https://www.helloasso.com/associations/sos-webforce3/adhesions/aider-les-pauvres-etudiants-de-wf3/widget" style="width:800px;height:750px;border:none;"></iframe>
+
+
+
 <?php $this->stop('main_content') ?>

@@ -13,7 +13,15 @@
 
         <!-- Style Slider -->
         <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/jcarousel.basic.css') ?>">
+        
+        <!-- Ajout du css pour la page type -->
+        <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/stylePage.css') ?>">
 
+        <!-- Intégration de Materialize -->
+            <!--Import Google Icon Font-->
+            <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+            <!--Import materialize.css-->
+            <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
         
         <!-- CSS pour l'affichage des articles sur la HOME -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/styleArticles.css') ?>">
@@ -23,7 +31,7 @@
     </head>
 
     <body>
-        <header>
+                <header>
             <ul id="bttn-co">
             <?php if (isset($_SESSION['user'])) { ?>
                 <li><a href="<?= $this->url('logout') ?>"><button>Deconnexion</button></a></li>
@@ -113,12 +121,12 @@
            <?php } ?> 
            </ul>
             </nav>
-        </header> 
+        </header>
+        <main> 
 
-			<?= $this->section('main_content') ?>
+            <?= $this->section('main_content') ?>
 
-        </main>  
-
+        </main>
         <footer>
             <section>
                 <h3>Contact</h3>
@@ -165,6 +173,9 @@
         <script type="text/javascript" src="<?= $this->assetUrl('dist/jquery.jcarousel.js') ?>"></script>
         <script type="text/javascript" src="<?= $this->assetUrl('js/jcarousel.basic.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/articlesHome.js') ?>"></script> 
+
+        <!-- Intégration Materialize pour les articles sur la Home -->
+            <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
 
     </body>
 </html>
