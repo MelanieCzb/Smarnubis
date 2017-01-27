@@ -98,5 +98,10 @@
 			['GET|POST', '/[i:id]/modificationArticle', 'Administration#modificationArticle', 'modificationArticle'],
 			['GET|POST', '/[i:id]/deleteArticle', 'Administration#deleteArticle', 'deleteArticle'],
 
+			['GET|POST', '/gestionConseil', 'Administration#gestionConseil', 'gestionConseil'],
+			['GET|POST', '/ajoutConseil', 'Administration#ajoutConseil', 'ajoutConseil'],
+			['GET|POST', '/[i:id]/updateConseil', 'Administration#updateConseil', 'updateConseil'],
+			['GET|POST', '/[i:id]/deleteConseil', 'Administration#deleteConseil', 'deleteConseil'],
+
 
 	);

@@ -114,6 +114,7 @@
                    <ul>
                        <li><a href="<?= $this->url('gestionArticles') ?>">Articles</a></li>
                        <li><a href="<?= $this->url('gestionDelegue') ?>">Délégués régionaux</a></li>
+                       <li><a href="<?= $this->url('gestionConseil') ?>">Conseil d'administration</a></li>
                    </ul>
                </li>
            <?php } ?> 

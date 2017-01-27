@@ -2,9 +2,9 @@
 
 <?php $this->start('main_content') ?>
 
-	<h2>Formulaire d'inscription</h2>
+	<h1>Formulaire d'inscription</h1>
 
-	<main>
+	<section>
 
 		<?php
 			if(! empty($erreurs)) { ?>
@@ -32,8 +32,7 @@
 			<input type="submit" name="inscrire" value="S'inscrire">
 		</form>
 
-	</main>
+	</section>
 	
-</body>
-</html>
+
 <?php $this->stop('main_content') ?>
