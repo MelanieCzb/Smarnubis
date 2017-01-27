@@ -8,6 +8,7 @@ use \W\Security\AuthentificationManager;
 use \Manager\DeleguesRegionauxManager;
 use \Manager\ArticleManager;
 use \Manager\ConseilManager;
+use \Manager\NewsManager;
 
 class AdministrationController extends Controller{
 // Gestion de l'inscription
@@ -283,12 +284,12 @@ class AdministrationController extends Controller{
 
 // Supprimer un article
 	public function deleteArticle($id){
-	$this->allowTo('admin');
-	$manager = new ArticleManager();
-	$manager->setTable('articles');
-	$delegue = $manager->delete($id);
+		$this->allowTo('admin');
+		$manager = new ArticleManager();
+		$manager->setTable('articles');
+		$delegue = $manager->delete($id);
 
-	$this->redirectToRoute('gestionArticles', ['messages' => "L'article est supprimé."]);
+		$this->redirectToRoute('gestionArticles', ['messages' => "L'article est supprimé."]);
 	}
 
 
@@ -395,5 +396,91 @@ class AdministrationController extends Controller{
 		$manager->setTable('conseil_administration');
 		$delegues = $manager->findAll();
 		$this->show('administration/gestionConseil', ['delegues' => $delegues]);
+	}
+
+// Affichage des News
+	public function gestionNews(){
+		$this->allowTo('admin');
+		
+		$manager = new NewsManager();
+		$articles = $manager->findAll();
+		$this->show('administration/gestionNews', ['articles' => $articles]);
+	}
+
+// Ajouter une News
+	public function ajoutNews(){
+
+		$erreurs = [];
+
+		if(isset($_POST['ajouter'])) { //traitement
+			
+			if (empty($_POST['myform']['titre'])) {
+				$erreurs[] = "Vous n'avez pas renseigner de titre";
+			}
+
+			if (empty($_POST['myform']['contenu'])) {
+				$erreurs[] = "Le contenu de l'article est vide";
+			}
+
+			if ($_POST['myform']['categorie'] == "") {
+				$erreurs[] = "Veuillez séléctionner une catégorie d'article";
+			}
+
+			if(empty($erreurs)) {
+
+				$manager = new NewsManager();
+				$manager->setTable('news');
+				$article = $manager->insert($_POST['myform']);
+				$this->redirectToRoute('gestionNews');
+			}
+			$this->show('administration/ajoutNews', ['erreurs' => $erreurs]);
+		} else {
+			$this->show('administration/ajoutNews', ['erreurs' => $erreurs]);
+		}
+	}
+
+// Modification d'une News
+	public function modificationNews($id){
+			if(isset($_POST['modifier'])){
+				$erreurs = [];
+
+				if(empty($_POST['myform']['titre'])){
+					$erreurs = "Le titre n'est pas renseigné.";
+				}
+
+				if(empty($_POST['myform']['contenu'])){
+					$erreurs = "Le contenu de l'article est vide.";
+				}
+
+				if(empty($_POST['myform']['categorie'])){
+					$erreurs = "Il faut séléctionner une catégorie pour que l'article soit répertorié.";
+				}
+
+					if(empty($erreurs)){
+						$manager = new NewsManager();
+						$manager->setTable('news');
+						$manager->update($_POST['myform'], $id);
+						$messages[] = "Les modifications sont enregistrées";
+						$this->redirectToRoute('gestionNews', ['messages' => $messages]);
+					}else{
+						$this->redirectToRoute('modificationNews', ['erreurs' => $erreurs]);
+					}
+				
+			}else{
+				$manager = new ArticleManager();
+				$manager->setTable('news');
+				$article = $manager->find($id);
+				$this->show('administration/modificationNews', ['article' => $article]);
+			}
+		}
+
+// Supprimer une news
+	public function deleteNews($id){
+		$this->allowTo('admin');
+		$manager = new NewsManager();
+		$manager->setTable('news');
+		$delegue = $manager->delete($id);
+
+		$this->redirectToRoute('gestionNews', ['messages' => "L'article est supprimé."]);
 	}
 }

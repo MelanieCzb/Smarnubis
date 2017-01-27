@@ -103,5 +103,9 @@
 			['GET|POST', '/[i:id]/updateConseil', 'Administration#updateConseil', 'updateConseil'],
 			['GET|POST', '/[i:id]/deleteConseil', 'Administration#deleteConseil', 'deleteConseil'],
 
+			['GET|POST', '/gestionNews', 'Administration#gestionNews', 'gestionNews'],
+			['GET|POST', '/ajoutNews', 'Administration#ajoutNews', 'ajoutNews'],
+			['GET|POST', '/[i:id]/modificationNews', 'Administration#modificationNews', 'modificationNews'],
+			['GET|POST', '/[i:id]/deleteNews', 'Administration#deleteNews', 'deleteNews'],
 
 	);

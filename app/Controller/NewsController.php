@@ -3,13 +3,18 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Manager\NewManager;
 
 class NewsController extends Controller
 {
 
 	public function archives()
 	{
-		$this->show('News/archives');
+		$categorie = "archives";
+		$manager = new NewManager();
+		$articles = $manager->findAllByCategory($categorie);
+
+		$this->show('News/archives', ['articles' => $articles]);
 	}
 
 	public function newsletter()
@@ -19,7 +24,12 @@ class NewsController extends Controller
 
 	public function news()
 	{
-		$this->show('News/news');
+		$categorie = "news";
+		$manager = new NewManager();
+		$articles = $manager->findAllByCategory($categorie);
+
+		$this->show('News/news', ['articles' => $articles]);
+
 	}
 
 }

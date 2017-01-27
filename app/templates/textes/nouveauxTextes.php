@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Nouveaux textes']) ?>
+<?php $this->layout('layoutType', ['title' => 'Nouveaux textes - SMARNUBIS', 'description'=>'Nouveaux textes de loi']) ?>
 
 <?php $this->start('main_content') ?>
 	
@@ -20,6 +20,5 @@
 		<?php endforeach ?>
 
 	</section>
-
 
 <?php $this->stop('main_content') ?>
