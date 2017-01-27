@@ -2,7 +2,9 @@
 
 <?php $this->start('main_content') ?>
 
-	<h2>Liste des articles</h2>
+	<h1>Liste des articles</h1>
+	
+	<section>
 	<?php
 			if(! empty($messages)){ ?>
 				<div class="row" style="background-color: green;color: white;font-weight: bold;">
@@ -13,7 +15,7 @@
 				</div>
 			<?php } ?>
 
-	<section>
+	
 	<a href="<?= $this->url('ajoutArticles') ?>"><button>Ajouter un article</button></a>
 	
 	<?php

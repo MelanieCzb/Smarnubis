@@ -84,6 +84,8 @@
 
 			['GET', '/news', 'news#news', 'news'],
 
+			['GET|POST', '/[i:id]/detailNews', 'News#detailNews', 'detailNews'],
+
 		// Templates/administration
 			['GET|POST', '/login', 'Administration#login', 'login'],
 			['GET|POST', '/logout', 'Administration#logout', 'logout'],
@@ -100,5 +102,14 @@
 			['GET|POST', '/[i:id]/modificationArticle', 'Administration#modificationArticle', 'modificationArticle'],
 			['GET|POST', '/[i:id]/deleteArticle', 'Administration#deleteArticle', 'deleteArticle'],
 
+			['GET|POST', '/gestionConseil', 'Administration#gestionConseil', 'gestionConseil'],
+			['GET|POST', '/ajoutConseil', 'Administration#ajoutConseil', 'ajoutConseil'],
+			['GET|POST', '/[i:id]/updateConseil', 'Administration#updateConseil', 'updateConseil'],
+			['GET|POST', '/[i:id]/deleteConseil', 'Administration#deleteConseil', 'deleteConseil'],
+
+			['GET|POST', '/gestionNews', 'Administration#gestionNews', 'gestionNews'],
+			['GET|POST', '/ajoutNews', 'Administration#ajoutNews', 'ajoutNews'],
+			['GET|POST', '/[i:id]/modificationNews', 'Administration#modificationNews', 'modificationNews'],
+			['GET|POST', '/[i:id]/deleteNews', 'Administration#deleteNews', 'deleteNews'],
 
 	);
