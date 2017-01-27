@@ -1,6 +1,7 @@
 <?php $this->layout('layoutType', ['title' => 'Commission statutaire']) ?>
 
 <?php $this->start('main_content') ?>
+	
 	<h1>Commission statutaire</h1>
 
 	<section>
