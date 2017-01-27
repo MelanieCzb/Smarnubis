@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional - SMARNUBIS', 'description' => 'Modification des délégués régionaux adhérant au SMARNUBIS']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -45,7 +45,7 @@
 				<option value="vice-president">Vice Président</option>
 				<option value="secretaire-general">Secrétaire général</option>
 				<option value="tresorier">Trésorier</option>
-				<option value="membre">>Membre</option>
+				<option value="membre">Membre</option>
 				<option value="membre-honoraire">Membre honoraire</option>
 				<option value="president-honneur">Président d'honneur</option>
 			</select>

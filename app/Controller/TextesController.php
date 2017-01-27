@@ -3,7 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \Manager\ArticleManager; 
+use \Manager\ArticleManager;
 
 class TextesController extends Controller
 {

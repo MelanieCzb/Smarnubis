@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Manager\NewsManager;
 
 class DefaultController extends Controller
 {
@@ -12,7 +13,11 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{
-		$this->show('default/home');
+		$categorie = "news";
+		$manager = new NewsManager();
+		$articles = $manager->findAllByCategory($categorie);
+
+		$this->show('default/home', ['articles' => $articles]);
 	}
 
 	public function presentation()
