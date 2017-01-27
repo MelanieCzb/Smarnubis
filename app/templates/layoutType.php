@@ -21,6 +21,7 @@
 
         <!-- Style accordéon -->
         <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/styleAccordeon.css') ?>">
+
         
         <!-- CSS pour l'affichage des articles sur la HOME -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/styleArticles.css') ?>">
@@ -57,7 +58,12 @@
                             </li>
                             <li><a href="<?= $this->url('lettreSyndicale') ?>">Lettre Syndicale</a></li>
                             <li><a href="<?= $this->url('vigilanceRisques') ?>">Vigilance Risques !</a></li>
-                            <li><a href="<?= $this->url('partenaires') ?>">Liste des partenaires</a></li>
+                            <li><a href="#">Listes des partenaires</a>
+                                <ul>
+                                    <li><a href="<?= $this->url('conseilOrdre') ?>">Conseil de l'Ordre</a></li> 
+                                    <li><a href="<?= $this->url('sfar') ?>">SFAR</a></li> 
+                                </ul>
+                            </li>
                             <li><a href="<?= $this->url('liens') ?>">Liens</a></li>
                         </ul>
                     </li>
@@ -79,7 +85,6 @@
                                     <li><a href="<?= $this->url('chirurgiePlateaux') ?>">Chirurgie - Plateaux - SROS3</a></li>
                                     <li><a href="<?= $this->url('primes') ?>">Primes</a></li>
                                     <li><a href="<?= $this->url('perinatalite') ?>">Périnatalité</a></li>
-                                    <li><a href="<?= $this->url('demographie') ?>">Démographie</a></li>
                                     <li><a href="<?= $this->url('securite') ?>">Sécurité</a></li>
                                     <li><a href="<?= $this->url('retraites') ?>">Retraites</a></li>
                                     <li><a href="<?= $this->url('permanenceSoins') ?>">Permanence des soins</a></li>
@@ -150,7 +155,7 @@
             <section>
                 <h3>Newsletter</h3>
                 <p>Entrez votre adresse email pour recevoir les dernières news du Smarnubis !</p>
-                <label>Inscription à la Newsletter </label><input type="text">
+                <label>Inscription à la Newsletter </label><input type="email">
                 <input type="submit" name="" value="Valider">
             </section>
 
@@ -175,10 +180,6 @@
         <script type="text/javascript" src="<?= $this->assetUrl('js/jcarousel.basic.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/articlesHome.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/jsAccordeon.js') ?>"></script> 
-
-        <!-- Intégration Materialize pour les articles sur la Home -->
-            <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
-
     </body>
 </html>
 

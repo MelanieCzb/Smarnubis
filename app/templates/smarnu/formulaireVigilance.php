@@ -1,6 +1,8 @@
-<?php $this->layout('layout', ['title' => 'Compte rendu de réunion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Compte rendu de réunion']) ?>
 
 <?php $this->start('main_content') ?>
+
+	<h1>Formulaire Vigilance Risque</h1>
 
 		<?php
 			if(! empty($erreurs)) { ?>
@@ -15,6 +17,8 @@
 		<?php }
 		?>
 		
+	<section>
+		
 		<form action="" method="POST">
 			<input type="text" name="nom" placeholder="Votre nom">
 			<input type="text" name="prenom" placeholder="Votre prénom">
@@ -22,5 +26,8 @@
 			<textarea name="message">Votre message</textarea>
 			<input type="submit" name="envoyer" value="Envoyer">
 		</form>
+
+	</section>
+		
 		
 <?php $this->stop('main_content') ?>
