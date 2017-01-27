@@ -36,6 +36,7 @@
 .stellarnav li a:hover { 
 	background-color: #dceefd;
 }
+
 /* main level */
 .stellarnav > ul > li { 
 	display: inline-block;  
