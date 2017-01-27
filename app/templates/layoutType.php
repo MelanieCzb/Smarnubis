@@ -68,7 +68,7 @@
 
                     <li><a href="">Textes de Loi</a>
                         <ul>
-                            <li><a href="<?= $this->url('nouveauxTextes') ?>">Nouveau textes</a></li>
+                            <li><a href="<?= $this->url('nouveauxTextes') ?>">Que dit la loi ?</a></li>
                             <li><a href="<?= $this->url('textesEuropeens') ?>">Textes européens</a></li>
                             <li><a href="<?= $this->url('emoluments') ?>">Emoluments</a></li>
                             <li><a href="<?= $this->url('gardesAstreintes') ?>">Gardes/Astreintes</a></li>
