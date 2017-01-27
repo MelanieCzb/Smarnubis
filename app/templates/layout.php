@@ -7,8 +7,8 @@
         <meta name="description" content="<?= $this->e($description) ?>">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
-        <meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <!--<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no">-->
 
         <!-- Style Menu-->	
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -151,8 +151,9 @@
             <section>
                 <h3>Newsletter</h3>
                 <p>Entrez votre adresse email pour recevoir les dernières news du Smarnubis !</p>
-                <label>Inscription à la Newsletter </label><input type="email">
-                <input type="submit" name="" value="Valider">
+                <label>Inscription à la Newsletter </label>
+                <input type="email">
+                <input type="submit" name="valider" value="Valider">
             </section>
 
             <aside>Smarnubis - Copyright</aside>
