@@ -2,7 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Smarnubis</title>
+        <title><?= $this->e($title) ?></title>
+
+        <meta name="description" content="<?= $this->e($description) ?>">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -68,7 +70,7 @@
 
                     <li><a href="">Textes de Loi</a>
                         <ul>
-                            <li><a href="<?= $this->url('nouveauxTextes') ?>">Nouveau textes</a></li>
+                            <li><a href="<?= $this->url('nouveauxTextes') ?>">Que dit la loi ?</a></li>
                             <li><a href="<?= $this->url('textesEuropeens') ?>">Textes européens</a></li>
                             <li><a href="<?= $this->url('emoluments') ?>">Emoluments</a></li>
                             <li><a href="<?= $this->url('gardesAstreintes') ?>">Gardes/Astreintes</a></li>
@@ -117,7 +119,10 @@
                <li><a href="">Administration</a>
                    <ul>
                        <li><a href="<?= $this->url('gestionArticles') ?>">Articles</a></li>
+                       <li><a href="<?= $this->url('gestionNews') ?>">News</a></li>
+                       <li><a href="<?= $this->url('gestionCalendrier') ?>">Calendrier</a></li>
                        <li><a href="<?= $this->url('gestionDelegue') ?>">Délégués régionaux</a></li>
+                       <li><a href="<?= $this->url('gestionConseil') ?>">Conseil d'administration</a></li>
                    </ul>
                </li>
            <?php } ?> 
@@ -125,7 +130,7 @@
             </nav>
         </header>
         <main> 
-
+        
             <?= $this->section('main_content') ?>
 
         </main>
@@ -151,7 +156,7 @@
             <section>
                 <h3>Newsletter</h3>
                 <p>Entrez votre adresse email pour recevoir les dernières news du Smarnubis !</p>
-                <label>Inscription à la Newsletter </label><input type="text">
+                <label>Inscription à la Newsletter </label><input type="email">
                 <input type="submit" name="" value="Valider">
             </section>
 

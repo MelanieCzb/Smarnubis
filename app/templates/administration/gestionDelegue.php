@@ -4,7 +4,7 @@
 
 	<h1>Liste des délégués</h1>
 
-	<main>
+
 		<section>
 			<a href="/ajoutDelegue">Ajouter un délégué</a>
 
@@ -18,8 +18,5 @@
 				<?php endforeach ?>
 		
 		</section>
-	</main>
-	
-</body>
-</html>
+
 <?php $this->stop('main_content') ?>
