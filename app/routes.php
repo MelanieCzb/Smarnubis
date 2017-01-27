@@ -23,7 +23,9 @@
 
 			['GET', '/vigilanceRisques', 'smarnu#vigilanceRisques', 'vigilanceRisques'],
 
-			['GET', '/partenaires', 'smarnu#partenaires', 'partenaires'],
+			['GET', '/conseilOrdre', 'smarnu#conseilOrdre', 'conseilOrdre'],
+
+			['GET', '/sfar', 'smarnu#sfar', 'sfar'],
 			
 			['GET', '/liens', 'smarnu#liens', 'liens'],
 

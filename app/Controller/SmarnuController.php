@@ -70,14 +70,20 @@ class SmarnuController extends Controller
 		$this->show('smarnu/lettreSyndicale', ['articles' => $articles]);
 	}
 
+
 	public function liens()
 	{
 		$this->show('smarnu/liens');
 	}
 
-	public function partenaires()
+	public function sfar()
 	{
-		$this->show('smarnu/partenaires');
+		$this->show('smarnu/sfar');
+	}
+
+	public function conseilOrdre()
+	{
+		$this->show('smarnu/conseilOrdre');
 	}
 
 }
