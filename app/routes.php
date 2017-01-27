@@ -82,6 +82,8 @@
 
 			['GET', '/news', 'news#news', 'news'],
 
+			['GET|POST', '/[i:id]/detailNews', 'News#detailNews', 'detailNews'],
+
 		// Templates/administration
 			['GET|POST', '/login', 'Administration#login', 'login'],
 			['GET|POST', '/logout', 'Administration#logout', 'logout'],

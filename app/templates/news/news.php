@@ -13,7 +13,8 @@
 
 			<button class="accordion"><h2><?= $this->e($article['titre']) ?></h2></button>
 				<div class="panel">
-  					<p><?= $this->e($article['contenu']) ?></p>
+  					<p><?= $this->e($article['resume']) ?></p>
+  					<a href="<?= $this->e($article['id']) ?>/detailNews">Détail de la news</a>
 				</div>
 			
 		<?php endforeach ?>

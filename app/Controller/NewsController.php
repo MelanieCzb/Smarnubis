@@ -4,6 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \Manager\NewManager;
+use \Manager\NewsManager;
 
 class NewsController extends Controller
 {
@@ -30,6 +31,13 @@ class NewsController extends Controller
 
 		$this->show('News/news', ['articles' => $articles]);
 
+	}
+
+	public function detailNews($id)
+	{
+		$manager = new NewManager();
+		$article = $manager->find($id);
+		$this->show('News/detailNews', ['article' => $article]);
 	}
 
 }

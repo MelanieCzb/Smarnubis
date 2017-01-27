@@ -64,7 +64,7 @@
                         <div class="content">
                           <h3><?= $this->e($article['titre']) ?></h3>
                           <p><?= $this->e($article['resume']) ?></p>
-                          <a href="">Lire la suite</a>
+                          <a href="<?= $this->e($article['id']) ?>/detailNews">Lire la suite</a>
                         </div>
                       <?php endforeach ?>
                 </div>
