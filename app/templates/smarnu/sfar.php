@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'sfar']) ?>
+<?php $this->layout('layoutType', ['title' => 'Le SFAR - SMARNUBIS', 'description' => 'Le SFAR, partenaire du Smarnubis (Syndicat des médecins anesthésistes réanimateurs non universitaires)']) ?>
 
 <?php $this->start('main_content') ?>
 	

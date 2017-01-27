@@ -23,29 +23,25 @@
 
 	   <h1>Le Syndicat des Médecins Anesthésistes-Réanimateurs<span> Non-Universitaire</span></h1>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.
             </p>
 
             <section id="flat_icon">
                 <div>
                     <figure>
-                        <!-- <img src="img/heart.png" alt=""> -->
                         <img src="<?= $this->assetUrl('img/heart.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/heart_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/heart.png') ?>'" />
                         <figcaption>Image 1</figcaption>
                     </figure>
                     <figure>
-                        <!-- <img src="img/stethoscope.png" alt=""> -->
                         <img src="<?= $this->assetUrl('img/stethoscope.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/stethoscope_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/stethoscope.png') ?>'" />
                         <figcaption>Image 2</figcaption>
                     </figure>
                     <figure>
-                        <!-- <img src="img/pill.png" alt=""> -->
                         <img src="<?= $this->assetUrl('img/pill.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/pill_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/pill.png') ?>'" />
                         <figcaption>Image 3</figcaption>
                     </figure>
                     <figure>
-                        <!-- <img src="img/syringe.png" alt=""> -->
                         <img src="<?= $this->assetUrl('img/syringe.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/syringe_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/syringe.png') ?>'" />
                         <figcaption>Image 4</figcaption>
                     </figure>
@@ -56,7 +52,6 @@
 <!-- Intégration du système d'affichage des articles -->
             <h2>Les News du Smarnubis</h2>
             <section id="afficheArticles">
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis ducimus quaerat impedit, eveniet rem minima nobis, doloribus consectetur et explicabo expedita repellat, voluptatum provident omnis. Similique atque pariatur, corporis!</p>  -->
 
                 <div class="tabs">
                     <nav> <a>Article 1</a> <a>Article 2</a> <a>Article 3</a> </nav>
@@ -80,9 +75,7 @@
 
             <section>
                 <h2>Calendrier</h2>
-                <figure>
-                    <img src="<?= $this->assetUrl('img/Calendar.png') ?>" alt="">
-                </figure>
+                
             </section>
 
 

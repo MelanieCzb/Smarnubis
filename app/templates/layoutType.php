@@ -151,7 +151,7 @@
             <section>
                 <h3>Newsletter</h3>
                 <p>Entrez votre adresse email pour recevoir les dernières news du Smarnubis !</p>
-                <label>Inscription à la Newsletter </label><input type="text">
+                <label>Inscription à la Newsletter </label><input type="email">
                 <input type="submit" name="" value="Valider">
             </section>
 
