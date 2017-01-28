@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:300,400,700');
+
 main section {
     width: 60%;
     display: inline-block;
@@ -56,10 +58,19 @@ main select{
 
 }
 
+/*Pour l'Iframe d'HelloAssos*/
 .adhesion{
     text-align: center;
 }
-
 .adhesion p{
     margin-bottom: 4rem;
+}
+
+
+/*---------------------------------------------------------
+                MEDIA QUERIES SMARTPHONE
+-----------------------------------------------------------*/
+
+@media only screen and (max-width : 415px) {
+
 }

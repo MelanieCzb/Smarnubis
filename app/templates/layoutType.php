@@ -21,13 +21,13 @@
 
         <!-- Style accordéon -->
         <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/styleAccordeon.css') ?>">
-
         
         <!-- CSS pour l'affichage des articles sur la HOME -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/styleArticles.css') ?>">
     
         <!-- Mon style -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/stylePage.css') ?>">
     </head>
 
     <body>
