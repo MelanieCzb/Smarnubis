@@ -30,20 +30,23 @@
             <section id="flat_icon">
                 <div>
                     <figure>
-                        <img src="<?= $this->assetUrl('img/heart.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/heart_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/heart.png') ?>'" />
-                        <figcaption>Image 1</figcaption>
+                        <a href="<?= $this->url('histoireSmarnu')?>"> <img src="<?= $this->assetUrl('img/heart.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/heart_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/heart.png') ?>'" /></a>
+                        <figcaption><span>Histoire du SMARNU</span><p>Qui sommes-nous ? Comment pouvons-nous vous aider ? Découvrez notre rôle...</p></figcaption>
                     </figure>
+
                     <figure>
-                        <img src="<?= $this->assetUrl('img/stethoscope.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/stethoscope_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/stethoscope.png') ?>'" />
-                        <figcaption>Image 2</figcaption>
+                        <a href="<?= $this->url('vigilanceRisques')?>"><img src="<?= $this->assetUrl('img/stethoscope.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/stethoscope_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/stethoscope.png') ?>'" /></a>
+                        <figcaption><span>Vigilance Risques</span><p>Retrouvez notre cellule de vigilance. Le Smarnu vous accompagne dans vos différentes démarches...</p></figcaption>
                     </figure>
+
                     <figure>
-                        <img src="<?= $this->assetUrl('img/pill.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/pill_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/pill.png') ?>'" />
-                        <figcaption>Image 3</figcaption>
+                        <a href="<?= $this->url('adhesion')?>"><img src="<?= $this->assetUrl('img/pill.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/pill_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/pill.png') ?>'" /></a>
+                        <figcaption><span>Adhésion</span><p>Quels sont les avantages de nos membres ? Comment nous rejoindre...</p></figcaption>
                     </figure>
+
                     <figure>
-                        <img src="<?= $this->assetUrl('img/syringe.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/syringe_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/syringe.png') ?>'" />
-                        <figcaption>Image 4</figcaption>
+                        <a href="<?= $this->url('nouveauxTextes')?>"><img src="<?= $this->assetUrl('img/syringe.png') ?>" onmouseover="this.src='<?= $this->assetUrl('img/syringe_2.png') ?>'" onmouseout="this.src='<?= $this->assetUrl('img/syringe.png') ?>'" /></a>
+                        <figcaption><span>Que dit la loi ?</span><p>Retrouvez tous les textes de loi qui nous encadrent et nous protègent...</p></figcaption>
                     </figure>
                 </div>
             </section>          

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:300,400,700');
 
-/*--------------------------RESET CSS--------------------------------------------------*/
+/*---------------------------------------------------------
+                          RESET CSS
+-----------------------------------------------------------*/
   *{
     margin: 0;
     padding: 0;
@@ -26,7 +28,9 @@
     margin:auto;
   }
 
-/*----------------------------------------Boutton connexion---------------------------*/
+/*---------------------------------------------------------
+                BUTTON Connexion - Inscription
+-----------------------------------------------------------*/
   #bttn-co{
     top: 1rem;
     text-align: right;
@@ -45,13 +49,17 @@
     color: white;
   }
 
-/*------------------------Menu + Nav--------------------------------------------*/
+/*---------------------------------------------------------
+                HEADER - NAV
+-----------------------------------------------------------*/
   header nav{
     margin-bottom : 2rem;
     background-color: white;
   }
   
-/*--------------------------------Main-------------------------------------*/
+/*---------------------------------------------------------
+                         MAIN
+-----------------------------------------------------------*/
   h1{
     font-variant: small-caps;
     padding: 4rem 0;
@@ -72,7 +80,6 @@
   }
 
   #flat_icon div figure img{
-    /*background-color: white;*/
     max-width: 100%;
   }
 
@@ -82,13 +89,26 @@
 
   section figure{
     display: inline-block; 
-    /*anciennement with tout court*/
     width: 24%;
-    margin: 4rem 0;
+    vertical-align: top;
+    margin: 6rem 0;
   }
 
   figcaption{
     margin : 2rem 0;
+  }
+
+  figcaption span{
+    display: block;
+    font-weight: bold;
+    font-size: 1.8rem;
+	  font-variant: small-caps;
+    margin: 2rem;
+  }
+
+  figcaption p{
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
   }
 
   section div{
@@ -105,7 +125,9 @@
     background-color: white;
   }
 
-/*----------------------------Footer-------------------------------*/
+/*---------------------------------------------------------
+                         FOOTER
+-----------------------------------------------------------*/
 footer{
   background-color: #bbdefb;
 }
@@ -186,7 +208,9 @@ footer div span{
 }
 
 
-/*MEDIA QUERIES SMARTPHONE*/
+/*---------------------------------------------------------
+                MEDIA QUERIES SMARTPHONE
+-----------------------------------------------------------*/
 
 @media only screen and (max-width : 415px) {
 
@@ -197,6 +221,28 @@ footer div span{
   h2{
     font-size: 2rem;
   }
+
+  #bttn-co{
+    text-align: center;
+    /*margin: 1.5rem;*/
+  }
+
+  #bttn-co li{
+    padding: 1rem;
+  }
+
+  #bttn-co button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #0d47a1;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+/*---------------------------------------------------------
+                ICONES
+-----------------------------------------------------------*/
 
   #flat_icon{
   background-color: white;
@@ -230,14 +276,6 @@ footer div span{
     display: block;
   }
 
-  footer section div:last-of-type{
-    /*padding-right: 100px;*/
-  }
-
-  /*footer input{
-    text-align: left;
-  }*/
-
   footer p{
     text-align: left;
   }
@@ -248,11 +286,8 @@ footer div span{
   }
   
   footer [type = "submit"] {
-    /*display: inline;*/
     display: block;
-    /* margin: auto; */
     float: left;
-    /* padding-right: 4rem; */
   }
 
   footer [type = "email"]{
@@ -268,9 +303,7 @@ footer div span{
   footer section{
     padding: 2rem;
     display: block; 
-    /* max-width: 47%; */
     vertical-align: top;
-    /* max-width: 585px; */
     margin-bottom: 1rem;   
   }
 
@@ -278,6 +311,4 @@ footer div span{
     padding-top: 0;
     margin-bottom: 4rem;
   }
-
-
 }  
