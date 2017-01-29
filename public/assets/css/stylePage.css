@@ -96,6 +96,13 @@ main input, textarea{
    box-sizing: border-box;
 }
 
+main li:before {    
+    font-family: 'FontAwesome';
+    content: '\f067';
+    margin:0 5px 0 -15px;
+    color: #0d47a1;
+}
+
 /*Pour l'Iframe d'HelloAssos*/
 .adhesion{
     text-align: center;
@@ -104,11 +111,54 @@ main input, textarea{
     margin-bottom: 4rem;
 }
 
+#haWidget{
+    width: 800px;
+    height: 800px;
+    border: none;
+}
+
+#haWidgetMobile{
+    display: none;
+}
 
 /*---------------------------------------------------------
                 MEDIA QUERIES SMARTPHONE
 -----------------------------------------------------------*/
 
 @media only screen and (max-width : 415px) {
+    main section{
+        width : 100%;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    main ul{
+        padding: 1rem 0 2rem 0;
+    }
+
+    main li{
+        margin-left: 2rem;
+    }
+
+    main h2{
+            font-size: 1.8rem;
+    }
+
+    #haWidget{
+        display: none;
+    }
+
+    #haWidgetMobile{
+        font: 1.5em sans-serif;
+        text-transform: uppercase;
+        max-width:150px;
+        text-decoration: none;
+        display: block;
+        background: #0d47a1;
+        text-align: center;
+        margin: auto;
+        padding: .75em .5em;
+        color: #FFF;
+    }
 
 }
