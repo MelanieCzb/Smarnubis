@@ -43,7 +43,6 @@ div.panel {
 main .panel p:before {    
     font-family: 'FontAwesome';
     content: '\f192';
-    border: 1px solid grey;
     margin: 0 10px 0 25px;
     color: #0d47a1;
 }
@@ -86,11 +85,10 @@ main .panel p::after {
     }
 
     main .panel p:before {    
-    font-family: 'FontAwesome';
-    content: '\f192';
-    border: 1px solid grey;
-    margin: 0 10px 0 0px;
-    color: #0d47a1;
-}
+        font-family: 'FontAwesome';
+        content: '\f192';
+        margin: 0 10px 0 0px;
+        color: #0d47a1;
+    }
 
 }
