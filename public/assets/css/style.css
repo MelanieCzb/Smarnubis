@@ -209,6 +209,15 @@ footer [type="email"]{
 footer div span{
   font-weight: bold;
 }
+main li{
+  list-style: none;
+}
+main li:before {    
+font-family: 'FontAwesome';
+content: '\f067';
+margin:0 5px 0 -15px;
+color: #0d47a1;
+}
 
 
 /*---------------------------------------------------------

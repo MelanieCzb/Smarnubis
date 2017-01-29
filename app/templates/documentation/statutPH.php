@@ -8,7 +8,8 @@
 		<h2>Titre V : Personnels médicaux et pharmaceutiques</h2>
 
 		<article>
-			<h3>Chapitre Ier : Personnels enseignants et hospitaliers</h3>
+			<h3><i class="fa fa-arrow-right" aria-hidden="true"></i>
+ Chapitre Ier : Personnels enseignants et hospitaliers</h3>
 			<ul>
 				<li><span>Section 1 :</span> Dispositions communes. <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006190867&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Article D6151-1)</a></li>
 				<li><span>Section 2 :</span> Consultanat <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006190868&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Articles D6151-2 à D6151-3)</a></li>
@@ -16,7 +17,8 @@
 		</article>
 
 		<article>
-			<h3>Chapitre II : Praticiens hospitaliers</h3>
+			<h3><i class="fa fa-arrow-right" aria-hidden="true"></i>
+ Chapitre II : Praticiens hospitaliers</h3>
 			<ul>
 				<li><span>Section 1 :</span> Statut des praticiens hospitaliers à temps plein
 					<ul>
@@ -34,7 +36,7 @@
 						<li><span>Sous-section 4 :</span> Rémunération. <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006196762&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Articles R6152-23 à R6152-25)</a></li>
 						<li><span>Sous-section 5 :</span>Exercice de fonctions - positions
 							<ul>
-								<li>Paragraphe 1 : Activité et congés
+								<li><span>Paragraphe 1 :</span> Activité et congés
 									<ul>
 										<li><span>1.</span> Fonctions. <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006199526&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Articles R6152-26 à R6152-33)</a></li>
 										<li><span>2.</span> Formation continue. <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006199527&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Article R6152-34)</a></li>
@@ -170,7 +172,8 @@
 		</article>
 
 		<article>
-			<h3> Chapitre III : Internes et étudiants en médecine et en pharmacie</h3>
+			<h3><i class="fa fa-arrow-right" aria-hidden="true"></i>
+ Chapitre III : Internes et étudiants en médecine et en pharmacie</h3>
 			<ul>
 				<li><span>section 1 :</span>  Statut des internes en médecine, en odontologie et en pharmacie
 					<ul>
@@ -188,7 +191,8 @@
 		</article>
 
 		<article>
-			<h3>Chapitre IV : Activité libérale des praticiens temps plein</h3>
+			<h3><i class="fa fa-arrow-right" aria-hidden="true"></i>
+ Chapitre IV : Activité libérale des praticiens temps plein</h3>
 			<ul>
 				<li><span>Section 1 :</span> Section 1 : Modalités d'exercice <a href="http://www.legifrance.gouv.fr/affichCode.do;jsessionid=8FB05A5B16732B5172D0D6747C3FDDF3.tpdjo05v_2?idSectionTA=LEGISCTA000006190881&cidTexte=LEGITEXT000006072665&dateTexte=20140525" target="_blank">(Articles R6154-1 à D6154-10-3)</a></li>
 				<li><span>Section 2 :</span> Commissions de l'activité libérale

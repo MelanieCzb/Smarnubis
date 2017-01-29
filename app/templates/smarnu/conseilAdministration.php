@@ -15,32 +15,32 @@
 
 					<p>
 						<?php if(! empty($delegue['telPrincipal'])){ ?>
-							Téléphone :<?= $delegue['telPrincipal'] ?><br>
+							<p><span>Téléphone : </span><?= $delegue['telPrincipal'] ?></p>
 						<?php } ?>
 
 						<?php if(! empty($delegue['telBureau'])){ ?>
-							Bureau :<?= $delegue['telBureau'] ?><br>
+							<p><span>Bureau : </span><?= $delegue['telBureau'] ?></p>
 						<?php } ?>
 
 						<?php if(! empty($delegue['telPortable'])){ ?>
-							Portable :<?= $delegue['telPortable'] ?><br>
+							<p><span>Portable : </span><?= $delegue['telPortable'] ?></p>
 						<?php } ?>
 
 						<?php if(! empty($delegue['telHopital'])){ ?>
-							Hopital :<?= $delegue['telHopital'] ?><br>
+							<p><span>Hopital : </span><?= $delegue['telHopital'] ?></p>
 						<?php } ?>
 
 						<?php if(! empty($delegue['telSecondaire'])){ ?>
-							Secondaire :<?= $delegue['telSecondaire'] ?><br>
+							<p><span>Secondaire : </span><?= $delegue['telSecondaire'] ?></p>
 						<?php } ?>
 
 						<?php if(! empty($delegue['fax'])){ ?>
-							Fax :<?= $delegue['fax'] ?><br>
+							<p><span>Fax : </span><?= $delegue['fax'] ?></p>
 						<?php } ?>
 					</p>
 
 				<?php if(! empty($delegue['email'])){ ?>
-						<p><?= $delegue['email'] ?></p>
+						<p><span>Email : </span><?= $delegue['email'] ?></p>
 					<?php } ?>
 				
 					
