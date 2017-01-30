@@ -2,6 +2,9 @@
 
 <?php $this->start('main_content') ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?= $this->assetUrl('js/traitement.js') ?>"></script>
+
 	<h1>Formulaire d'inscription</h1>
 
 	<section>
@@ -19,7 +22,7 @@
 		<?php }
 		?>
 
-		<form action="" method="POST">
+		<form action="formulaireInscription.php" method="POST" id="formInscription">
 			<!-- <input type="text" name="nom" placeholder="Votre nom"> -->
 			<input type="text" name="myform[username]" placeholder="Votre nom d'utilisateur" id="username">
 			<input type="text" name="myform[email]" placeholder="Votre email" id="email">
@@ -34,5 +37,6 @@
 
 	</section>
 	
+
 
 <?php $this->stop('main_content') ?>

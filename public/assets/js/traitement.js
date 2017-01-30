@@ -1,5 +1,6 @@
 // Attendre le chargement du DOM
 $(document).ready(function(){
+	
 
 	// Supprimer les messages d'erreurs
 	$('input:not([type="submit"])').focus(function(){
@@ -32,7 +33,7 @@ $(document).ready(function(){
 
 		// On vérifie le champ email 
 		// On utilise val pour récupérer la valeur et length pour la longueur
-		if( ! $('#email').val().length === /\A[^@]+@[^@]+\z/ ) {
+		if( $('#email').val().length < 6 ) {
 
 			// Afficher un message d'erreur
 			$("#email").addClass('error').fadeIn();
@@ -62,7 +63,7 @@ $(document).ready(function(){
 
 		// On vérifie le champ confirmMotDePasse 
 		// On utilise val pour récupérer la valeur et length pour la longueur
-		if( ! $('#confirmMotDePasse').val().length === ($('#password')) && ($('#confirmMotDePasse').val().length < 6 )) {
+		if( ! $('#confirmMotDePasse').val() != ($('#password').val()) && ($('#confirmMotDePasse').val().length < 6 )) {
 
 			// Afficher un message d'erreur
 			$("#confirmMotDePasse").addClass('error').fadeIn();
@@ -77,8 +78,9 @@ $(document).ready(function(){
 
 		// Validation finale du formulaire
 		if( formScore == 4 ) {
-
+			console.log(formScore);
 			// Pour terminer proprement le formulaire on en lève le event/prevent pour passer les champs sur le connect.php et on prépare sa requète AJAX
+
 
 			// Vider les champs du fromulaire
 			$('#username').val('');
@@ -91,4 +93,4 @@ $(document).ready(function(){
 	});
 
 
-}); // Findu chargement
+}); // Fin du chargement
