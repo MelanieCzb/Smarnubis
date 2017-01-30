@@ -14,17 +14,21 @@
 			<p>Résultats des élections professionnelles 2005 des personnels médicaux hospitaliers 
 			(Publication du ministère du 20 juillet 2005)</p>
 			<p>Les cinq bureaux de vote nationaux présidant à la proclamation des résultats définitifs des élections professionnelles des personnels médicaux hospitaliers ont achevé leurs opérations de dépouillement des votes. Ces élections concernent trois statuts de personnels médicaux hospitaliers :</p>
-			<p>les praticiens hospitaliers temps plein ;</p>
-			<p>les praticiens hospitaliers temps partiel ;</p>
-			<p>les personnels enseignants et hospitaliers titulaires.</p>
+			<ul>
+				<li>les praticiens hospitaliers temps plein ;</li>
+				<li>les praticiens hospitaliers temps partiel ;</li>
+				<li>les personnels enseignants et hospitaliers titulaires.</li>
+			</ul>
 			<p>Elles président au renouvellement des membres syndicaux de cinq instances nationales, pour sept disciplines, dont les mandats issus du scrutin de 1998 prendront fin le 14 octobre 2005.</p>
 			<p>Ces instances nationales sont les suivantes :</p>
-			<p>commission statutaire nationale (CSN) compétente des praticiens hospitaliers temps plein (collège des praticiens hospitaliers et collège des personnels enseignants et universitaires )</p>
-			<p>commission nationale pour les nominations aux fonctions de chefs de service de psychiatrie ;</p>
-			<p>conseil de discipline des praticiens hospitaliers temps plein ;</p>
-			<p>conseil de discipline des praticiens hospitaliers temps partiel ;</p>
-			<p>commission paritaire nationale des praticiens temps partiel.
-			Les sept disciplines sont la médecine, la chirurgie, l’anesthésie réanimation, la radiologie, la biologie, la psychiatrie, la pharmacie.</p>
+			<ul>
+				<li>commission statutaire nationale (CSN) compétente des praticiens hospitaliers temps plein (collège des praticiens hospitaliers et collège des personnels enseignants et universitaires )</li>
+				<li>commission nationale pour les nominations aux fonctions de chefs de service de psychiatrie ;</li>
+				<li>conseil de discipline des praticiens hospitaliers temps plein ;</li>
+				<li>conseil de discipline des praticiens hospitaliers temps partiel ;</li>
+				<li>commission paritaire nationale des praticiens temps partiel.</li>
+			</ul>
+			<p>Les sept disciplines sont la médecine, la chirurgie, l’anesthésie réanimation, la radiologie, la biologie, la psychiatrie, la pharmacie.</p>
 			<p>Au total, pour ces cinq commissions et pour les sept disciplines, ce sont 210 titulaires et 210 suppléants qui ont été élus, chaque commission ayant par discipline 6 membres titulaires et 6 membres suppléants.</p>
 			<p>Selon les scrutins et les disciplines, le nombre de listes présentées varie de une à cinq listes, le nombre total de ces listes étant de 81.</p>
 
@@ -41,8 +45,8 @@
 			<p>Quel gâchis ! Alors que les services d’accueil et d’urgence sont débordés et ne trouvent plus de lits pour héberger leurs patients, nos départements d’anesthésie-réanimation sont promis au saucissonnage entre divers pôles, la polyvalence de notre spécialité et de nos diplômes est remise en question, le maintien de l’amélioration de nos conditions d’exercice deviennent incertaine et nombre de plateaux techniques sont destinés à être fermés et délocalisés.</p>
 			<p>La multiplication des listes électorales ne peux qu’affaiblir notre action et nous rendre tous vulnérables. Entre FO qui est aussi le représentant des Directeurs d’établissement, l’ AMUF qui ne représente que les Urgences, la CMH et le SNAM qui par opportunisme et absence de sens critique, signent toutes les décisions proposées par le Ministre, et le SNPHAR très impliqué dans les CHU, nous risquons de perdre en représentativité des hôpitaux généraux.</p> 
 			<p>Plus que jamais, nous avons besoins que le SNMARHNU soit un syndicat fort regroupant toutes les voix des Anesthésistes-Réanimateurs des Hôpitaux Généraux. Quel que soit votre lieux d’exercice : aux urgences, en réanimation, au bloc opératoire, votez SNMARHNU pour parler et défendre notre spécialité et nos établissements d’une seule voix.</p>
-			<p>Michel Vignier (Mantes-la-Jolie),
-			Président du S.N.M.A.R.H.N.U.</p>
+			<p><span>Michel Vignier (Mantes-la-Jolie),
+			Président du S.N.M.A.R.H.N.U.</span></p>
 
 		</article>
 

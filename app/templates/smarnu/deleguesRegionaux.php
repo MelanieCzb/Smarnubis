@@ -1,7 +1,7 @@
 <?php $this->layout('layoutType', ['title' => 'Le smarnubis']) ?>
 
 <?php $this->start('main_content') ?>
-	<h1>Délégués régionaux.</h1>
+	<h1>Délégués Régionaux</h1>
 	<section>
 	
 		<?php 
@@ -15,28 +15,32 @@
 					} 
 
 					if(! empty($delegue['lieuExercice'])){ ?>
-						<p>Lieu d'exercice : <?= $delegue['lieuExercice'] ?></p>
+						<p><span>Lieu d'exercice : </span> <?= $delegue['lieuExercice'] ?></p>
 					<?php } ?>
 
 					<?php
 					if(! empty($delegue['telPrincipal'])){?>
-						Tel principal : <?= $delegue['telPrincipal'];
-					}
+						<p><span>Tel principal : </span> <?= $delegue['telPrincipal'] ?></p>
+					<?php } ?>
 
+					<?php
 					if(! empty($delegue['telSecondaire'])){?>
-						Tel principal : <?= $delegue['telPrincipal'];
-					}
+						<p><span>Tel secondaire : </span> <?= $delegue['telSecondaire']?></p>
+					<?php } ?>
 
+					<?php
 					if(! empty($delegue['telPortable'])){?>
-						Tel principal : <?= $delegue['telPrincipal'];
-					}
+						<p><span>Tel portable : </span> <?= $delegue['telPortable']?></p>
+					<?php } ?>
 
+					<?php
 					if(! empty($delegue['telBureau'])){?>
-						Tel principal : <?= $delegue['telPrincipal'];
-					}
+						<p><span>Tel bureau : </span> <?= $delegue['telBureau']?></p>
+					<?php } ?>
 
+				<?php	
 				if(! empty($delegue['email'])){ ?>
-					email : <?= $delegue['email']; ?>
+					<p><span>email : </span> <?= $delegue['email'] ?></p>
 					<?php }?>
 			</article>
 			<?php endforeach ?>

@@ -36,6 +36,7 @@
 .stellarnav li a:hover { 
 	background-color: #dceefd;
 }
+
 /* main level */
 .stellarnav > ul > li { 
 	display: inline-block;  
@@ -73,6 +74,8 @@
 .stellarnav.light { 
 	background: rgba(255, 255, 255, 1); 
 	padding: .5rem 0;
+	/*Avant 1.5rem*/
+	font-size: 1.6rem;
 }
 .stellarnav.light ul ul { 
 	background: rgba(255, 255, 255, 1); 

@@ -108,7 +108,7 @@
 			}
 					
 			// adds the toggle button to open and close nav 
-			nav.prepend('<a href="#" class="menu-toggle"><i class="fa fa-bars"></i> Menu</a>');
+			nav.prepend('<a href="#" class="menu-toggle"><i class="fa fa-bars"></i> SMARNUBIS</a>');
 
 			// opens and closes menu			
 			$('.menu-toggle').on('click', function(e) {

@@ -1,4 +1,4 @@
-#afficheArticles {
+#afficheArticles, #articles {
   /*background: #596283;*/
   font: 14px Optima, 'roboto', sans-serif;
   border: none;
@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .tabs, .content{
   box-sizing: border-box;
@@ -84,4 +83,58 @@
 .content h3{
   margin-bottom: 15px;
   text-align: left;
+}
+
+/*---------------------------------------------------------
+                MEDIA QUERIES SMARTPHONE
+-----------------------------------------------------------*/
+@media only screen and (max-width : 415px) {
+  #articles{
+      width: 100%;
+    }
+
+  .tabs {
+    margin: 0px 20px;
+    position: relative;
+    background: #e3f2fd;
+    width: 100%;
+    margin: auto;
+  }
+
+  .tabs, .content {
+    box-sizing: border-box;
+  }
+
+  .tabs nav {
+    display: flex;
+    flex-wrap: initial;
+    align-items: stretch;
+    background: #bbdefb;
+    color: #0d47a1;
+    max-width: 100%;
+    /*max-height: 250px;*/
+    margin: auto;
+  }
+
+  .tabs .content.visible {
+    padding: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    opacity: 1;
+    position: relative;
+  }
+
+  .tabs .content {
+    padding: 20px 0px;
+    position: absolute;
+    color: #6C5D5D;
+    width: 0px;
+    height: 100%;
+    top :0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.1s linear 0s;
+  }
+
 }
