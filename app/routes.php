@@ -112,4 +112,8 @@
 			['GET|POST', '/[i:id]/modificationNews', 'Administration#modificationNews', 'modificationNews'],
 			['GET|POST', '/[i:id]/deleteNews', 'Administration#deleteNews', 'deleteNews'],
 
+			['GET|POST', '/ajoutCalendrier', 'Administration#ajoutCalendrier', 'ajoutCalendrier'],
+			['GET|POST', '/gestionCalendrier', 'Administration#gestionCalendrier', 'gestionCalendrier'],
+			['GET|POST', '/[i:id]/modificationCalendrier', 'Administration#modificationCalendrier', 'modificationCalendrier'],
+			['GET|POST', '/[i:id]/deleteCalendrier', 'Administration#deleteCalendrier', 'deleteCalendrier'],
 	);

@@ -9,6 +9,7 @@ use \Manager\DeleguesRegionauxManager;
 use \Manager\ArticleManager;
 use \Manager\ConseilManager;
 use \Manager\NewsManager;
+use \Manager\CalendrierManager;
 
 class AdministrationController extends Controller{
 // Gestion de l'inscription
@@ -483,4 +484,93 @@ class AdministrationController extends Controller{
 
 		$this->redirectToRoute('gestionNews', ['messages' => "L'article est supprimé."]);
 	}
+
+
+// Affichage du calendrier
+	public function gestionCalendrier(){
+		$this->allowTo('admin');
+		
+		$manager = new CalendrierManager();
+		$manager->setTable('evenements');
+		$evenements = $manager->findAll();
+		$this->show('administration/gestionCalendrier', ['evenements' => $evenements]);
+	}
+
+// Ajouter un évènement au calendrier
+	public function ajoutCalendrier(){
+
+		$erreurs = [];
+
+		if(isset($_POST['ajouter'])) { //traitement
+			
+			if (empty($_POST['myform']['titre'])) {
+				$erreurs[] = "Vous n'avez pas renseigner de titre";
+			}
+
+			if (empty($_POST['myform']['contenu'])) {
+				$erreurs[] = "Le contenu de l'article est vide";
+			}
+
+			if ($_POST['myform']['date'] == "") {
+				$erreurs[] = "Veuillez renseigner une date";
+			}
+
+			if(empty($erreurs)) {
+
+				$manager = new CalendrierManager();
+				$manager->setTable('evenements');
+				$article = $manager->insert($_POST['myform']);
+				$this->redirectToRoute('gestionCalendrier');
+			}
+			$this->show('administration/ajoutCalendrier', ['erreurs' => $erreurs]);
+		} else {
+			$this->show('administration/ajoutCalendrier', ['erreurs' => $erreurs]);
+		}
+	}
+
+// Modification d'un evenement
+	public function modificationCalendrier($id){
+			if(isset($_POST['modifier'])){
+				$erreurs = [];
+
+				if(empty($_POST['myform']['titre'])){
+					$erreurs = "Le titre n'est pas renseigné.";
+				}
+
+				if(empty($_POST['myform']['contenu'])){
+					$erreurs = "Le contenu de l'évènement est vide.";
+				}
+
+				if(empty($_POST['myform']['date'])){
+					$erreurs = "Il faut séléctionner une date.";
+				}
+
+					if(empty($erreurs)){
+						$manager = new CalendrierManager();
+						$manager->setTable('evenements');
+						$manager->update($_POST['myform'], $id);
+						$messages[] = "Les modifications sont enregistrées";
+						$this->redirectToRoute('gestionCalendrier', ['messages' => $messages]);
+					}else{
+						$this->redirectToRoute('modificationCalendrier', ['erreurs' => $erreurs]);
+					}
+				
+			}else{
+				$manager = new ArticleManager();
+				$manager->setTable('evenements');
+				$article = $manager->find($id);
+				$this->show('administration/modificationCalendrier', ['article' => $article]);
+			}
+		}
+
+// Supprimer un evenement
+	public function deleteCalendrier($id){
+		$this->allowTo('admin');
+		$manager = new CalendrierManager();
+		$manager->setTable('evenements');
+		$delegue = $manager->delete($id);
+
+		$this->redirectToRoute('gestionCalendrier', ['messages' => "L'evenement est supprimé."]);
+	}
+
 }
