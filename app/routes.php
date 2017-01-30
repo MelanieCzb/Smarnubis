@@ -75,6 +75,8 @@
 
 			['GET', '/agenda', 'contacts#agenda', 'agenda'],
 
+			['GET|POST', '/[i:id]/detailEvenement', 'contacts#detailEvenement', 'detailEvenement'],
+
 			['GET', '/liste', 'contacts#liste', 'liste'],
 
 		// Templates/news
@@ -116,4 +118,5 @@
 			['GET|POST', '/gestionCalendrier', 'Administration#gestionCalendrier', 'gestionCalendrier'],
 			['GET|POST', '/[i:id]/modificationCalendrier', 'Administration#modificationCalendrier', 'modificationCalendrier'],
 			['GET|POST', '/[i:id]/deleteCalendrier', 'Administration#deleteCalendrier', 'deleteCalendrier'],
+
 	);
