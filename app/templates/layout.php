@@ -154,8 +154,10 @@
                 <h3>Newsletter</h3>
                 <p>Entrez votre adresse email pour recevoir les dernières news du Smarnubis !</p>
                 <label>Inscription à la Newsletter </label>
-                <input type="email">
-                <input type="submit" name="valider" value="Valider">
+                <form action=""method="POST">
+                    <input type="email">
+                    <input type="submit" name="valider" value="Valider">
+                </form>
             </section>
 
             <aside>Smarnubis - Copyright</aside>
