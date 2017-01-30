@@ -6,10 +6,11 @@
 
 	<section>
 		<h2>Inscription</h2>
-		<form method="POST">
-			<input type="email" name="myform['email']" placeholder="Votre email">
+		<form method="POST" action="">
+			<input type="text" name="myform[email]" placeholder="Votre email">
 			<input type="submit" name="inscrire" value="S'inscrire">
 		</form>
 
 	</section>
+	
 <?php $this->stop('main_content') ?>

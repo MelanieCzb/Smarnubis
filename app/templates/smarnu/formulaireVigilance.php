@@ -3,8 +3,10 @@
 <?php $this->start('main_content') ?>
 
 	<h1>Formulaire Vigilance Risque</h1>
+		
+	<section>
 
-		<?php
+	<?php
 			if(! empty($erreurs)) { ?>
 				<div class="row" style="background-color: red;color: white;font-weight: bold;">
 					<h3>Liste des erreurs</h3>
@@ -16,8 +18,16 @@
 				</div>
 		<?php }
 		?>
-		
-	<section>
+
+		<?php
+			if(! empty($message)) { ?>
+				<div class="row" style="background-color: green;color: white;font-weight: bold;">
+					
+						<?= $message ?>
+
+				</div>
+		<?php }
+		?>
 
 		<h2>Qu'est ce que la cellule de vigilance ?</h2>
 
@@ -39,11 +49,11 @@
 		</article>
 		
 		<form action="" method="POST">
-			<input type="text" name="nom" placeholder="Votre nom">
-			<input type="text" name="prenom" placeholder="Votre prénom">
-			<input type="text" name="email" placeholder="Votre email">
-			<textarea name="message" placeholder = "Votre message"></textarea>
-			<input type="submit" name="envoyer" value="Envoyer">
+			<input type="text" name="myform[nom]" placeholder="Votre nom">
+			<input type="text" name="myform[prenom]" placeholder="Votre prénom">
+			<input type="text" name="myform[email]" placeholder="Votre email">
+			<textarea name="myform[message]" placeholder = "Votre message"></textarea>
+			<input type="submit" name="envoyer" value="Envoyer votre message">
 		</form>
 
 	</section>

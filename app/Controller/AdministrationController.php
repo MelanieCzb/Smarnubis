@@ -10,6 +10,7 @@ use \Manager\ArticleManager;
 use \Manager\ConseilManager;
 use \Manager\NewsManager;
 use \Manager\CalendrierManager;
+use \Manager\VigilanceManager;
 
 class AdministrationController extends Controller{
 // Gestion de l'inscription
@@ -571,6 +572,26 @@ class AdministrationController extends Controller{
 		$delegue = $manager->delete($id);
 
 		$this->redirectToRoute('gestionCalendrier', ['messages' => "L'evenement est supprimé."]);
+	}
+
+// Gestion du formulaire vigilance
+	public function gestionVigilance(){
+		$this->allowTo('admin');
+		
+		$manager = new VigilanceManager();
+		$manager->setTable('vigilance');
+		$vigilance = $manager->findAll();
+		$this->show('Administration/gestionVigilance', ['vigilance' => $vigilance]);
+	}
+
+// Supprimer une ligne du formulaire vigilance
+	public function deleteVigilance($id){
+		$this->allowTo('admin');
+		$manager = new VigilanceManager();
+		$manager->setTable('vigilance');
+		$resultats = $manager->delete($id);
+
+		$this->redirectToRoute('gestionVigilance');
 	}
 
 }

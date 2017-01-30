@@ -8,7 +8,7 @@ namespace Manager;
 class CalendarhomeManager extends \W\Manager\Manager
 {
 
-	public function findAllByCategory($categorie, $orderBy = "id", $orderDir = "DESC", $limit = 3, $offset = null)
+	public function findAll($orderBy = "id", $orderDir = "DESC", $limit = 3, $offset = null)
 	{
 
 		$sql = "SELECT * FROM " . $this->table . "";
