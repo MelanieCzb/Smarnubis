@@ -8,10 +8,10 @@ namespace Manager;
 class CalendarhomeManager extends \W\Manager\Manager
 {
 
-	public function findAllByCategory($categorie, $orderBy = "date", $orderDir = "DESC", $limit = 3, $offset = null)
+	public function findAllByCategory($categorie, $orderBy = "id", $orderDir = "DESC", $limit = 3, $offset = null)
 	{
 
-		$sql = "SELECT * FROM " . $this->table . " WHERE date >= :today";
+		$sql = "SELECT * FROM " . $this->table . "";
 		if (!empty($orderBy)){
 
 			//sécurisation des paramètres, pour éviter les injections SQL
@@ -37,10 +37,8 @@ class CalendarhomeManager extends \W\Manager\Manager
 				}
 			}
 		}
-
 		$sth = $this->dbh->prepare($sql);
-		// $sth->bindValue("categorie", $categorie);
-		$sth->bindValue("today", date("Y-m-j"));
+
 		$sth->execute();
 
 		return $sth->fetchAll();

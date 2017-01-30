@@ -23,7 +23,7 @@
 
 		<h2><?= $this->e($article['titre']) ?> (<?= $this->e($article['categorie']) ?>)</h2>
 		<a href="<?= $this->e($article['id']) ?>/modificationArticle">Modifier l'article</a>
-		-- <a href="<?= $this->e($article['id']) ?>/deleteArticle">Supprimer l'article'</a>
+		-- <a href="<?= $this->e($article['id']) ?>/deleteArticle">Supprimer l'article</a>
 		
 			
 		<?php endforeach ?>

@@ -6,7 +6,7 @@
 
 
 		<section>
-			<a href="/ajoutDelegue">Ajouter un délégué</a>
+			<a href="/ajoutDelegue"><button>Ajouter un délégué</button></a>
 
 			<?php
 				foreach ($delegues as $delegue) : ?>

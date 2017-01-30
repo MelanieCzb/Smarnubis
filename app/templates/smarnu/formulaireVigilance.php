@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Compte rendu de réunion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Formulaire vigilance risques - SMARNUBIS']) ?>
 
 <?php $this->start('main_content') ?>
 

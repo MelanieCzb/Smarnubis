@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Ajouter un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Ajouter une News']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -42,6 +42,9 @@
 			<label for="contenu">Contenu :</label>
 			<textarea name="myform[contenu]"><?php if(isset($_POST['myform']['contenu'])){?> <?= $_POST['myform']['contenu']?><?php } ?></textarea>
 
+			<label for="signature">Signature : </label>
+			<input type="text" name="myform[signature]" placeholder="Signature" <?php if(isset($_POST['myform']['signature'])){?> value="<?= $_POST['myform']['signature']?>"<?php } ?>">
+
 			<label for="categorie" >Catégorie de la News :</label>
 			<select name="myform[categorie]">
 				<option value="">Sélectionner la priorité d'archivage.</option>
@@ -49,7 +52,6 @@
 				<option value="news">News</option>
 				<option value="archives">Archives</option>
 			</select>
-
 			
 			
 			<input type="submit" name="ajouter" value="Ajouter l'article">
