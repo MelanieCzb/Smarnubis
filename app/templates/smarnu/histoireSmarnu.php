@@ -119,7 +119,6 @@
 				</p>
 				<p><span>Dr Denis CAZABAN Praticien hospitalier,  CH Le Raincy – Montfermeil (Seine Saint- Denis)
 				Président du SMARNU</span></p>
-				
 				<p>Je félicite le docteur CAZABAN pour son élection à la présidence du SMARNU. Son expérience syndicale et son implication désintéressée pour la défense des praticiens ne sont plus à démontrer. En ce qui me concerne, je continuerai à me tenir au service des anesthésistes-réanimateurs, et apporterai mon soutien au nouveau président.</p>
 				<p><span>Dr ANDRIAMIFIDY Louison,
 				président d'honneur du SMARNU.</span></p> 
