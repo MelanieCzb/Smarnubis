@@ -7,7 +7,7 @@
 		
 		<article>
 	
-				<h3>RECOMMANDATIONS CONCERNANT LES RELATIONS ENTRE LES ANESTHESISTE-REANIMATEURS ET CHIRURGIENS? AUTRES SPECIALISTES OU PROFESSIONNELS DE LA SANTE :</h3>
+				<h3>Recommandations concernant les relations entre les Anesthésistes-Réanimateurs et les Chirurgiens? Autres Spécialistes ou professionnels de la santé :</h3>
 				<p>Document adopté lors de la session du Conseil National del’Ordre des Médecins de décembre 2001
 				La Position de l' Ordre des Médecins concernant le projet de modification du Statut de P.H. (4 janvier 2005)</p>
 				<p>Statut des praticiens hospitaliers : l´Ordre sort de son silence </p>

@@ -16,18 +16,20 @@
         <!-- Style Slider -->
         <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/jcarousel.basic.css') ?>">
         
-        <!-- Ajout du css pour la page type -->
-        <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/stylePage.css') ?>">
-
-        <!-- Style accordéon -->
-        <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/styleAccordeon.css') ?>">
-
         
         <!-- CSS pour l'affichage des articles sur la HOME -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/styleArticles.css') ?>">
+
+         <!-- Style accordéon -->
+        <link rel="stylesheet" type="text/css" href="<?= $this->assetUrl('css/styleAccordeon.css') ?>">
     
-        <!-- Mon style -->
+        <!-- Mon style pour la Home -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+
+        <!-- Mon style pour les pages -->
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/stylePage.css') ?>">
+
+       
     </head>
 
     <body>
