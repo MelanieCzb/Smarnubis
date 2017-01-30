@@ -18,13 +18,13 @@
 				</div>
 		<?php }
 		?>
-		
+
 		<form action="" method="POST">
 			<!-- <input type="text" name="nom" placeholder="Votre nom"> -->
-			<input type="text" name="myform[username]" placeholder="Votre nom d'utilisateur">
-			<input type="text" name="myform[email]" placeholder="Votre email">
-			<input type="password" name="myform[password]" placeholder="Votre mot de passe">
-			<input type="password" name="confirmMotDePasse" placeholder="Confirmez votre motre mot de passe">
+			<input type="text" name="myform[username]" placeholder="Votre nom d'utilisateur" id="username">
+			<input type="text" name="myform[email]" placeholder="Votre email" id="email">
+			<input type="password" name="myform[password]" placeholder="Votre mot de passe" id="password">
+			<input type="password" name="confirmMotDePasse" placeholder="Confirmez votre motre mot de passe" id="confirmMotDePasse">
 			<!-- <input type="text" name="adresse" placeholder="Votre adresse">
 			<input type="text" name="codePostal" placeholder="Votre code postal">
 			<input type="text" name="ville" placeholder="Votre ville">
