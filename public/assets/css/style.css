@@ -28,6 +28,12 @@
     margin:auto;
   }
 
+  a{
+    color: #0d47a1;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+
 /*---------------------------------------------------------
                 BUTTON Connexion - Inscription
 -----------------------------------------------------------*/
@@ -118,14 +124,61 @@
     margin: auto;
   }
 
-  h2{
-      margin: 5rem 0;
+  .h2Home{
+      margin: 5rem 0 3rem 0;
       font-size: 2.5rem;
   }
 
   main section:last-of-type{
     background-color: white;
   }
+
+/*---------------------------------------------------------
+                EVENEMENTS
+-----------------------------------------------------------*/
+
+  #events {
+    max-width: 25%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: right;
+  }
+
+  .event::after {
+    text-align: right;
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 25rem;
+    background-color: #0d47a1;
+    margin: 2rem auto;
+  }
+
+
+  .event h3:before {    
+    font-family: 'FontAwesome';
+    content: '\f271';
+    margin: 0 10px 0 25px;
+    color: #0d47a1;
+}
+  
+
+  #events h3 {
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  /*section:last-of-type h2 {
+    margin: 5rem 0 2rem 0;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }*/
+
+.tabs .content.visible a {
+	text-align: right;
+	display: block;
+	margin-right: 2rem;
+}
 
 /*---------------------------------------------------------
                          FOOTER
@@ -213,8 +266,6 @@ main li{
   list-style: none;
 }
 
-
-
 /*---------------------------------------------------------
                 MEDIA QUERIES SMARTPHONE
 -----------------------------------------------------------*/
@@ -275,6 +326,20 @@ main li{
   main p{
     text-align: center;
     padding: 0 1rem;
+  }
+
+/*---------------------------------------------------------
+                EVENEMENTS
+-----------------------------------------------------------*/
+
+  #events {
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem 0;
+  }
+
+  .event a{
+    padding-right: 2rem;
   }
 
 /*---------------------------------------------------------

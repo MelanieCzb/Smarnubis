@@ -53,12 +53,16 @@
 
 
 <!-- Intégration du système d'affichage des articles -->
-            <h2>Les News du Smarnubis</h2>
+            <h2 class ="h2Home">Les News du Smarnubis</h2>
             
             <section id="afficheArticles">
                 <div id="articles">
                     <div class="tabs">
-                        <nav> <a>Article 1</a> <a>Article 2</a> <a>Article 3</a> </nav>
+                        <nav>
+                            <a><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-newspaper-o" aria-hidden="true"></i></a> 
+                            <a><i class="fa fa-newspaper-o" aria-hidden="true"></i></a> 
+                        </nav>
                         <?php
                         foreach ($articles as $article) : ?>
                             <div class="content">
@@ -70,14 +74,19 @@
                     </div>
                 </div>    
             </section>
-            
+
+                <h2 class ="h2Home">Événements</h2>
             <section> 
-                <h2>Calendrier</h2>
-                <?php
-                foreach ($evenements as $evenement) : ?>
-                <h3><?= $this->e($evenement['titre']) ?> - <?= $this->e($evenement['date']) ?></h3>
-                <a href="<?= $this->e($evenement['id']) ?>/detailEvenement">En savoir plus</a>
-                <?php endforeach ?>
+                
+                <div id="events">
+                    <?php
+                    foreach ($evenements as $evenement) : ?>
+                    <div class="event">
+                        <h3><?= $this->e($evenement['titre']) ?> - <?= $this->e($evenement['date']) ?></h3>
+                        <a href="<?= $this->e($evenement['id']) ?>/detailEvenement">En savoir plus</a>
+                    </div>
+                    <?php endforeach ?>
+                </div>
             </section>
 
 
