@@ -18,6 +18,12 @@ h1 {
 	margin: 2rem auto;
 }
 
+  a{
+    color: #0d47a1;
+    text-decoration: none;
+    font-variant: normal;
+  }
+
 main h2 {
 	margin: 4rem 0 1rem 0;
 	font-size: 2.5rem;
@@ -81,6 +87,15 @@ main [type="submit"]{
   border-radius: .5rem;
   background-color: #0d47a1;
   color: white;
+}
+
+/*Button administration*/
+main button{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #0d47a1;
+    color: white;
 }
 
 main input, textarea{
