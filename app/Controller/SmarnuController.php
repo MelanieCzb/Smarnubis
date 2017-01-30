@@ -63,7 +63,7 @@ class SmarnuController extends Controller
 
 	public function lettreSyndicale()
 	{
-		$categorie = "lettre-syndicales";
+		$categorie = "lettre-syndicale";
 		$manager = new ArticleManager();
 		$articles = $manager->findAllByCategory($categorie);
 
