@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?>
 	
 <section>
-	<h1>Nouveaux textes</h1>
+	<h1>Que dit la loi ?</h1>
 
 	<?php
 	foreach ($articles as $article) : ?>

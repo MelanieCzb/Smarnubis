@@ -6,6 +6,7 @@ use \W\Controller\Controller;
 use \Manager\DeleguesRegionauxManager;
 use \Manager\ArticleManager;
 use \Manager\ConseilManager;
+use \Manager\VigilanceManager;
 
 
 class SmarnuController extends Controller
@@ -58,12 +59,48 @@ class SmarnuController extends Controller
 
 	public function vigilanceRisques()
 	{
-		$this->show('smarnu/formulaireVigilance');
+		$erreurs = [];
+
+		if(isset($_POST['envoyer'])){
+			// Vérification du formulaire de vigilance
+				if(empty($_POST['myform']['nom'])){
+					$erreurs[] = "Vous devez renseigner votre nom";
+				}
+
+				if(empty($_POST['myform']['prenom'])){
+					$erreurs[] = "Votre prénom est vide";
+				}
+
+				if( empty($_POST['myform']['email']) ) {
+				$erreurs[] = "Le champ Email est obligatoire.";
+					}
+					if( ! filter_var($_POST['myform']['email'], FILTER_VALIDATE_EMAIL) ) {
+						$erreurs[] = "L'email est incorrect.";
+				}
+
+				if(empty($_POST['myform']['message'])){
+					$erreurs[] = "Vous n'avez pas saisi de message";
+				}
+
+				if(empty($erreurs)){
+				
+				// traitement
+				$manager = new VigilanceManager();
+				$manager->setTable('vigilance');
+				$manager->insert($_POST['myform']);
+				$this->show('smarnu/formulaireVigilance', ['message' => "Votre message a été transmis"]);
+			}else{
+				$this->show('smarnu/formulaireVigilance', ['erreurs' =>$erreurs]);
+			}
+
+		}else{
+			$this->show('smarnu/formulaireVigilance');
+		}
 	}
 
 	public function lettreSyndicale()
 	{
-		$categorie = "lettre-syndicales";
+		$categorie = "lettre-syndicale";
 		$manager = new ArticleManager();
 		$articles = $manager->findAllByCategory($categorie);
 

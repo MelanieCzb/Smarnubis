@@ -39,7 +39,7 @@
 			</select>
 
 			
-			<input type="submit" name="modifier" value="Modifier l'article'">
+			<input type="submit" name="modifier" value="Modifier la news">
 		</form>
 
 	</main>
