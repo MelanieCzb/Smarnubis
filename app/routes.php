@@ -82,7 +82,7 @@
 		// Templates/news
 			['GET', '/archives', 'news#archives', 'archives'],
 
-			['GET', '/newsletter', 'news#newsletter', 'newsletter'],
+			['GET|POST', '/newsletter', 'news#newsletter', 'newsletter'],
 
 			['GET', '/news', 'news#news', 'news'],
 

@@ -32,9 +32,9 @@ class AdministrationController extends Controller{
 			if( empty($_POST['myform']['email']) ) {
 				$erreurs[] = "Le champ Email est obligatoire.";
 			}
-			if( ! filter_var($_POST['myform']['email'], FILTER_VALIDATE_EMAIL) ) {
-				$erreurs[] = "L'email est incorrect.";
-			}
+				if( ! filter_var($_POST['myform']['email'], FILTER_VALIDATE_EMAIL) ) {
+					$erreurs[] = "L'email est incorrect.";
+				}
 
 			// password
 			if( empty($_POST['myform']['password']) ) {
