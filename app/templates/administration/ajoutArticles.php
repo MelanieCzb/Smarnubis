@@ -40,6 +40,7 @@
 			<textarea name="myform[contenu]"><?php if(isset($_POST['myform']['contenu'])){?> <?= $_POST['myform']['contenu']?><?php } ?></textarea>
 
 			<label for="fichier">Fichier associé</label>
+			<input type="hidden" name="MAX_FILE_SIZE" value="1073741824" /> <!-- Limite 100Mo -->
 			<input type="file" name="myform[fichier]">
 
 			<label for="categorie" >Catégorie de l'article :</label>

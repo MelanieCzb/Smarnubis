@@ -21,7 +21,7 @@
 
 			['GET', '/lettreSyndicale', 'smarnu#lettreSyndicale', 'lettreSyndicale'],
 
-			['GET', '/vigilanceRisques', 'smarnu#vigilanceRisques', 'vigilanceRisques'],
+			['GET|POST', '/vigilanceRisques', 'smarnu#vigilanceRisques', 'vigilanceRisques'],
 
 			['GET', '/conseilOrdre', 'smarnu#conseilOrdre', 'conseilOrdre'],
 
@@ -118,5 +118,10 @@
 			['GET|POST', '/gestionCalendrier', 'Administration#gestionCalendrier', 'gestionCalendrier'],
 			['GET|POST', '/[i:id]/modificationCalendrier', 'Administration#modificationCalendrier', 'modificationCalendrier'],
 			['GET|POST', '/[i:id]/deleteCalendrier', 'Administration#deleteCalendrier', 'deleteCalendrier'],
+
+			['GET|POST', '/gestionVigilance', 'Administration#gestionVigilance', 'gestionVigilance'],
+			['GET|POST', '/[i:id]/deleteVigilance', 'Administration#deleteVigilance', 'deleteVigilance'],
+
+
 
 	);

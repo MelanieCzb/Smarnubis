@@ -6,6 +6,11 @@
 	z-index: 9900; 
 	line-height: normal;
 }
+
+.stellarnav a{
+	font-variant: normal;
+}
+
 .stellarnav ul { 
 	margin: 0; 
 	padding: 0; 
