@@ -178,7 +178,7 @@
         <script type="text/javascript" src="<?= $this->assetUrl('dist/jquery.jcarousel.js') ?>"></script>
         <script type="text/javascript" src="<?= $this->assetUrl('js/jcarousel.basic.js') ?>"></script> 
         <script type="text/javascript" src="<?= $this->assetUrl('js/articlesHome.js') ?>"></script> 
-
+        <script type="text/javascript" src="<?= $this->assetUrl('js/traitement.js') ?>"></script>
     </body>
 </html>
 
