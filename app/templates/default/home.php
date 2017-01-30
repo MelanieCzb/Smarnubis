@@ -68,7 +68,11 @@
 
             <section>
                 <h2>Calendrier</h2>
-                
+                <?php
+                foreach ($evenements as $evenement) : ?>
+                <h3><?= $this->e($evenement['titre']) ?> - <?= $this->e($evenement['date']) ?></h3>
+                <a href="<?= $this->e($evenement['id']) ?>/detailEvenement">En savoir plus</a>
+                <?php endforeach ?>
             </section>
 
 

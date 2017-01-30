@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Liste des délégués régionaux']) ?>
+<?php $this->layout('layoutType', ['title' => 'Liste des article - SMARNUBIS', 'content' => 'Gestion des articles relatif à la loi pour le SMARNUBIS, page réservée à l\'administrateur']) ?>
 
 <?php $this->start('main_content') ?>
 

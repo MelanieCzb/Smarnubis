@@ -4,6 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \Manager\NewsManager;
+use \Manager\CalendarhomeManager;
 
 class DefaultController extends Controller
 {
@@ -17,7 +18,11 @@ class DefaultController extends Controller
 		$manager = new NewsManager();
 		$articles = $manager->findAllByCategory($categorie);
 
-		$this->show('default/home', ['articles' => $articles]);
+		$manager = new CalendarhomeManager();
+		$manager->setTable('evenements');
+		$evenements = $manager->findAll();
+
+		$this->show('default/home', ['articles' => $articles, 'evenements' => $evenements]);
 	}
 
 	public function presentation()
