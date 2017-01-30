@@ -28,6 +28,14 @@ class ContactsController extends Controller
 
 	}
 
+	public function detailEvenement($id)
+	{
+		$manager = new CalendrierManager();
+		$manager->setTable('evenements');
+		$evenement = $manager->find($id);
+		$this->show('contacts/detailEvenement', ['evenement' => $evenement]);
+	}
+
 	public function liste()
 	{
 		$this->show('Contacts/liste');
