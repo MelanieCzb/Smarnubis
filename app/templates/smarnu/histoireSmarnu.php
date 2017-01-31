@@ -95,6 +95,38 @@
 			<p><span>Dr James Brodeur, Président SMARNU (30 mai 2009)</span></p>
 		</article>
 
+		<article>
+			<p><span>Nouvelle présidence au SMARNU (24/11/14) toutes nos félicitations au Dr Cazaban.</span></p>
+			<ul>
+				<p>Le conseil d’administration du SMARNU m’a fait l’honneur de m'élire à la présidence de notre syndicat lors de l'assemblée générale du 19 septembre.</p>
+				<p>Je succède ainsi à Louison ANDRIAMIFIDY qui a souhaité réorienter sa carrière, mais qui reste à nos côtés.</p>
+				<p>Je le remercie de son implication et de sa disponibilité qui ont permis à notre mouvement de se faire entendre pendant son mandat. 
+				Je veux continuer dans la droite ligne de mes prédécesseurs, avec comme action la défense des intérêts spécifiques des médecins anesthésistes exerçant dans les  hôpitaux généraux, qui  reste le moteur de notre action. </p>
+				<p>Et j’entends par médecins anesthésistes tous ceux qui pratiquent la spécialité dans les hôpitaux publics. Même si le corps des praticiens hospitaliers est le groupe le plus important, les autres statuts ou positions sont pris en compte dans notre syndicat.</p>
+				<p>Donc les PH, les contractuels, les assistants, les attachés, les médecins à diplôme étranger peuvent nous rejoindre, ainsi que les médecins intérimaires qui exercent dans nos  hôpitaux, car ces collègues ont droit à notre attention dès le moment ou ils  travaillent dans des établissements publics. L’exercice en hôpital universitaire ou dans un établissement à but non lucratif n’est pas non plus un obstacle à une adhésion.</p>
+				<p>Le paysage syndical.</p>
+				<p>Il est difficile pour un médecin hospitalier de se retrouver dans le paysage actuel du syndicalisme hospitalier.</p>
+				<p>Il serait trop long de refaire l’historique des mouvements syndicaux, mais on constate que les médecins au fil du temps se sont regroupés par affinités naturelles ou de circonstance, donc :</p>
+				<li>Par spécialité, mais aussi par mode d’exercice, par statut, par lieu d’exercice,  quelquefois par région.</li>
+				<li>De plus, des spécialités ont des syndicats publics et libéraux en même temps et certains ont été d’emblée pluridisciplinaires.</li>
+				<li>Cette dispersion, pour des raisons de représentativité vis-à-vis des instances, a entraîné la création d’intersyndicales au nombre de cinq actuellement et dont la composition a pu varier dans le temps. </li>
+				<li>Enfin, il existe une représentativité médicale, certes confidentielle, au sein des sections santé des grandes centrales syndicales.</li>
+				<p>Ce foisonnement  pouvait être la preuve de la vitalité de l’action syndicale et de l’intérêt important porté par nos collègues à l’action et la revendication, à des époques où était prégnante la nécessité d’améliorer le statut et les conditions de travail des médecins hospitaliers. Notre spécialité a de plus été frappée par les effets du numerus clausus, et la disparition du CES, qui ont diminué de façon extrême le nombre d’entrants dans la spécialité.
+				Mais force est de constater que l’action syndicale n’est plus une priorité pour beaucoup.</p>
+				<p>Les plus anciens, souvent très impliqués, arrêtent d’exercer et les plus jeunes semblent moins concernés. Cela s’inscrit dans un mouvement  général de notre société de désaffection envers l’action syndicale.
+				C’est pourquoi je veux que le SMARNU se place dans une dynamique unitaire qui, à notre sens, doit nous ramener une audience auprès du corps médical hospitalier.
+				Nous vous ferons part bientôt de notre plate forme revendicative et de nos propositions  dans un prochain message, et dans notre lettre syndicale à paraître.
+				</p>
+				<p><span>Dr Denis CAZABAN Praticien hospitalier,  CH Le Raincy – Montfermeil (Seine Saint- Denis)
+				Président du SMARNU</span></p>
+				<p>Je félicite le docteur CAZABAN pour son élection à la présidence du SMARNU. Son expérience syndicale et son implication désintéressée pour la défense des praticiens ne sont plus à démontrer. En ce qui me concerne, je continuerai à me tenir au service des anesthésistes-réanimateurs, et apporterai mon soutien au nouveau président.</p>
+				<p><span>Dr ANDRIAMIFIDY Louison,
+				président d'honneur du SMARNU.</span></p> 
+				 
+			</ul>
+
+		</article>
+
 		<aside>
 			<a href="<?= $this->assetUrl('pdf/histoiredusmarnu.pdf') ?>"target = "'_blank'">Histoire longue</a>
 		</aside>
