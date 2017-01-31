@@ -23,15 +23,18 @@
 		?>
 
 		<form action="<?= $this->url('inscription') ?>" method="POST" id="formInscription">
-			<!-- <input type="text" name="nom" placeholder="Votre nom"> -->
+			<label for="username">Nom d'utilisateur (max 50 caractères) :</label>
 			<input type="text" name="username" placeholder="Votre nom d'utilisateur" id="username">
+
+			<label for="email">Votre email :</label>
 			<input type="text" name="email" placeholder="Votre email" id="email">
+
+			<label for="password">Mot de passe (entre 6 et 20 caractère) :</label>
 			<input type="password" name="password" placeholder="Votre mot de passe" id="password">
+			
+			<label for="confirmMotDePasse">Confirmez votre mot de passe :</label>
 			<input type="password" name="confirmMotDePasse" placeholder="Confirmez votre motre mot de passe" id="confirmMotDePasse">
-			<!-- <input type="text" name="adresse" placeholder="Votre adresse">
-			<input type="text" name="codePostal" placeholder="Votre code postal">
-			<input type="text" name="ville" placeholder="Votre ville">
-			<input type="text" name="lieuExercice" placeholder="Votre lieu d'exercice"> -->
+			
 			<input type="submit" name="inscrire" value="S'inscrire">
 		</form>
 

@@ -2,11 +2,10 @@
 // http://192.168.33.10/
 	
 	$w_routes = array(
-		['GET', '/', 'Default#home', 'home'],
+		['GET|POST', '/', 'Default#home', 'home'],
+		['GET|POST', '/enregistrement', 'Default#enregistrement', 'enregistrement'],
 
 		// Templates/smarnu
-		['GET', '/presentation', 'Smarnu#presentation', 'presentation'],
-
 			['GET', '/deleguesRegionaux', 'smarnu#deleguesRegionaux', 'deleguesRegionaux'],
 
 			['GET', '/conseilAdministration', 'smarnu#conseilAdministration', 'conseilAdministration'],
@@ -76,8 +75,6 @@
 			['GET', '/agenda', 'contacts#agenda', 'agenda'],
 
 			['GET|POST', '/[i:id]/detailEvenement', 'contacts#detailEvenement', 'detailEvenement'],
-
-			['GET', '/liste', 'contacts#liste', 'liste'],
 
 		// Templates/news
 			['GET', '/archives', 'news#archives', 'archives'],

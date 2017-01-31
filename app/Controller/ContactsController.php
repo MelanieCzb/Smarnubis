@@ -36,9 +36,4 @@ class ContactsController extends Controller
 		$this->show('contacts/detailEvenement', ['evenement' => $evenement]);
 	}
 
-	public function liste()
-	{
-		$this->show('Contacts/liste');
-	}
-
 }

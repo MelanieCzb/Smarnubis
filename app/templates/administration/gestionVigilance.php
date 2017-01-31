@@ -9,13 +9,20 @@
 	<?php
 		foreach ($vigilance as $message) : ?>
 
-		<h2><?= $this->e($message['nom']) ?> <?= $this->e($message['prenom']) ?></h2>
-		<p><?= $this->e($message['email']) ?></p>
-		<p><?= $this->e($message['message']) ?></p>
-		<a href="<?= $this->e($message['id']) ?>/deleteVigilance">Supprimer</a>
+		<button class="accordion"><h2><h2><?= $this->e($message['nom']) ?> <?= $this->e($message['prenom']) ?></h2></button>
+		<div class="panel">
+			<p><?= $this->e($message['email']) ?></br>
+			<?= $this->e($message['message']) ?></p>
+			<a href="<?= $this->e($message['id']) ?>/deleteVigilance">Supprimer</a>
+		</div>
 		
 			
 		<?php endforeach ?>
+
+		<?php
+			if(empty($vigilance)){ ?>
+				<h2> Aucun nouvel enregistrement actuellement </h2>
+			<?php } ?>
 	</section>
 
 <?php $this->stop('main_content') ?>

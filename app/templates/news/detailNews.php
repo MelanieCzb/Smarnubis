@@ -7,7 +7,7 @@
 <section>
 		
 		<h2><?= $this->e($article['titre']) ?></h2>
-		<p></p><?= $this->e($article['resume']) ?></p>
+		<p><i><?= $this->e($article['resume']) ?></i></p>
 		<p><?= $this->e($article['contenu']) ?></p>
 		<span><?= $this->e($article['signature']) ?></span>
 
