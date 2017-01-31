@@ -35,6 +35,8 @@ class DefaultController extends Controller
 				$manager->insert($_POST['myform']);
 				$messages[] = "Vous êtes désormais inscrit à la newsletter";
 				$this->show('news/newsletter', ['messages' => $messages]);
+		}else{
+			$this->show('news/newsletter');
 		}
 		
 	}

@@ -22,7 +22,7 @@
 		<?php }
 		?>
 
-		<form action="<?= $this->url('inscription') ?>" method="POST" id="formInscription">
+		<form action="<?= $this->url('inscription') ?>" method="POST">
 			<label for="username">Nom d'utilisateur (max 50 caractères) :</label>
 			<input type="text" name="username" placeholder="Votre nom d'utilisateur" id="username">
 

@@ -17,7 +17,7 @@ class AdministrationController extends Controller{
 	public function inscription(){
 		$erreurs = [];
 
-		if ( isset($_POST['inscrire']) ) {
+		if ( isset($_POST['username']) ) {
 			
 			// prenom requis
 			if( empty($_POST['username']) ) {
@@ -55,7 +55,7 @@ class AdministrationController extends Controller{
 					// traitement
 				$_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 				$manager = new UserManager();
-				// $manager->insert($_POST['myform']);
+				$manager->insert(['username' => $_POST['username'], 'email'=>$_POST['email'], 'password'=>$_POST['password']]);
 				//$this->redirectToRoute('login');
 				echo "OK";
 			}else{

@@ -10,11 +10,14 @@ $(document).ready(function(){
 
 	});
 
+
 	$('form').on('submit', function(event){
+
+
 
 		var formScore = 0;
 
-		event.preventDefault();
+		
 
 		var $this = $(this);
 
@@ -78,29 +81,26 @@ $(document).ready(function(){
 			formScore++;
 		};
 
-		// Validation finale du formulaire
-		if( formScore == 4 ) {
-			console.log(formScore);
-			// Pour terminer proprement le formulaire on en lève le event/prevent pour passer les champs sur le connect.php et on prépare sa requète AJAX
-			var data = $this.serialize();
-			console.log(data);
+
+
+
+
+		event.preventDefault();
+		var _data = $('form').serialize();
+		console.log(_data);
+
+		if (formScore == 4) {
 			$.ajax({
-                url: $this.attr('action'), // Le nom du fichier indiqué dans le formulaire
-                type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
-                data: data, // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
-                success: function(html) { // Je récupère la réponse du fichier PHP
-                    console.log(html); // J'affiche cette réponse
-            	}
-            });
-
-			// Vider les champs du fromulaire
-			$('#username').val('');
-			$('#email').val('');
-			$('#password').val('');
-			$('#confirmMotDePasse').val('');
-		
-		};
-
+	            url: "/inscription", // Le nom du fichier indiqué dans le formulaire
+	            type: 'POST', // La méthode indiquée dans le formulaire (get ou post)
+	            data: _data // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
+	        }).done(function(data) {
+	        	if (data == "OK") {
+	        		window.location.replace("/login");
+	        	}
+				console.log(data);
+	        });
+    	}
 	});
 
 
