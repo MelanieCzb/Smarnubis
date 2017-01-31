@@ -58,7 +58,7 @@
 				<option value="cr-reunion">Compte rendu de réunion</option>
 			</select>
 
-			
+		
 			
 			<input type="submit" name="ajouter" value="Ajouter l'article">
 		</form>
@@ -69,3 +69,5 @@
 </body>
 </html>
 <?php $this->stop('main_content') ?>
+
+

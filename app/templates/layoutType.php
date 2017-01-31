@@ -28,7 +28,6 @@
 
         <!-- Mon style pour les pages -->
         <link rel="stylesheet" href="<?= $this->assetUrl('css/stylePage.css') ?>">
-
        
     </head>
 
@@ -189,6 +188,7 @@
         <script type="text/javascript" src="<?= $this->assetUrl('js/jsAccordeon.js') ?>"></script>
 
         <?php echo $this->section('javascript') ?>
+
     </body>
 </html>
 
