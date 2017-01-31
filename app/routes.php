@@ -2,7 +2,8 @@
 // http://192.168.33.10/
 	
 	$w_routes = array(
-		['GET', '/', 'Default#home', 'home'],
+		['GET|POST', '/', 'Default#home', 'home'],
+		['GET|POST', '/enregistrement', 'Default#enregistrement', 'enregistrement'],
 
 		// Templates/smarnu
 		['GET', '/presentation', 'Smarnu#presentation', 'presentation'],
