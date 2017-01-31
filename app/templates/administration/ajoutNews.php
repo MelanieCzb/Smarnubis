@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Ajouter une News']) ?>
+<?php $this->layout('layoutType', ['title' => 'Ajouter une News - SMARNUBIS', 'description' => 'Ajouter un ici une nouvelle news réservé à l\'administrateur.' ]) ?>
 
 <?php $this->start('main_content') ?>
 

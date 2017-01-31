@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Lettre syndicale']) ?>
+<?php $this->layout('layoutType', ['title' => 'Lettre syndicale - SMARNUBIS', 'description' => 'Retrouvez ici la liste des lettres syndicales.']) ?>
 
 <?php $this->start('main_content') ?>
 

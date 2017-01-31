@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Commission statutaire']) ?>
+<?php $this->layout('layoutType', ['title' => 'Commission statutaire - SMARNUBIS', 'description' => 'Retrouvez ici les informations relatives à la commission statutaire.']) ?>
 
 <?php $this->start('main_content') ?>
 	

@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Travail additionnel'])?>
+<?php $this->layout('layoutType', ['title' => 'Travail additionnel - SMARNUBIS', 'description' => 'Retrouvez ic les informations concernant le temps de travail additionnel.'])?>
 
 <?php $this->start('main_content')?>
 	<h1>Travail additionnel (TTA)</h1>

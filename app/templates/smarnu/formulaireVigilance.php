@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Formulaire vigilance risques - SMARNUBIS']) ?>
+<?php $this->layout('layoutType', ['title' => 'Formulaire vigilance risques - SMARNUBIS', 'description' => 'Retrouvez ici le formulaire de la cellule vigilance risque.']) ?>
 
 <?php $this->start('main_content') ?>
 

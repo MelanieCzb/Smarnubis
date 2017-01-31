@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Status P.H.']) ?>
+<?php $this->layout('layoutType', ['title' => 'Status P.H. - SMARNUBIS', 'description' => 'Retrouvez ici toutes les informations relatives au statut du praticien hospitalier.']) ?>
 
 <?php $this->start('main_content') ?>
 	

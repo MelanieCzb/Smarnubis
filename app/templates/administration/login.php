@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Connexion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Connexion - SMARNUBIS', 'description' => 'Connectez vous pour accéder a votre espace membre']) ?>
 
 <?php $this->start('main_content') ?>
 	

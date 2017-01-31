@@ -1,8 +1,8 @@
-<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Modifier un membre du conseil d\'administration - SMARNUBIS', 'description' => 'Modifiez les informations concernant les membres du conseil d\'administration']) ?>
 
 <?php $this->start('main_content') ?>
 
-	<h2>Modification d'un délégué</h2>
+	<h2>Modification d'un membre</h2>
 
 	<main>
 	<a href="/gestionConseil">Retour à la gestion du conseil</a>

@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Compte rendu de réunion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Compte rendu de réunion - SMARNUBIS', 'description' => 'Retrouvez ici la liste des comptes-rendus de réunions.']) ?>
 
 <?php $this->start('main_content') ?>
 

@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Modifier un article - SMARNUBIS', 'description' => 'Modification ou suppression des articles relatif à la loi pour le SMARNUBIS, page réservée à l\'administrateur']) ?>
 
 <?php $this->start('main_content') ?>
 

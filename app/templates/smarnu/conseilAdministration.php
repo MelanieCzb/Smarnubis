@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Conseil d\'administration']) ?>
+<?php $this->layout('layoutType', ['title' => 'Conseil d\'administration - SMARNUBIS', 'description' => 'Retrouvez ici la liste des membres du conseil d\'administration ainsi que leurs coordonnées.']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Conseil d'administration</h1>

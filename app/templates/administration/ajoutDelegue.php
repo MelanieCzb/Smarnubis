@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Ajouter un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Ajouter un délégué régional - SMARNUBIS ', 'description' => 'Ajouter ici un nouveau délégué régional réservé à l\'administrateur.']) ?>
 
 <?php $this->start('main_content') ?>
 

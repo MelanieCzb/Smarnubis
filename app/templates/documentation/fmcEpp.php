@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'F.M.C. - E.P.P.'])?>
+<?php $this->layout('layoutType', ['title' => 'F.M.C. - E.P.P. - SMARNUBIS', 'description' => 'Retrouvez ici toutes les informations concernant l\'évaluation des partiques professionnelles et la formation médicale continue.' ])?>
 
 <?php $this->start('main_content')?>
 	<h1>FMC - EPP</h1>
