@@ -77,8 +77,6 @@
 
 			['GET|POST', '/[i:id]/detailEvenement', 'contacts#detailEvenement', 'detailEvenement'],
 
-			['GET', '/liste', 'contacts#liste', 'liste'],
-
 		// Templates/news
 			['GET', '/archives', 'news#archives', 'archives'],
 
