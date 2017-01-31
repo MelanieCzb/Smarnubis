@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Urgences'])?>
+<?php $this->layout('layoutType', ['title' => 'Urgences - SMARNUBIS', 'description' => 'Retrouvez ici les rapports, textes réglementaires et courriers offciels concernant les urgences.'])?>
 
 <?php $this->start('main_content')?>
 	<h1>Urgences</h1>

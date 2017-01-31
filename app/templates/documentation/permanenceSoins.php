@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Permanence des soins'])?>
+<?php $this->layout('layoutType', ['title' => 'Permanence des soins - SMARNUBIS', 'description' => 'Retrouvez ici les textes rélementaires ainsi que les rapports liés à la permanence des soins.'])?>
 
 <?php $this->start('main_content')?>
 

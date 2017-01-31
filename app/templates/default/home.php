@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Smarnubis']) ?>
+<?php $this->layout('layout', ['title' => 'Smarnubis : page d\'accueil', 'description' => 'Retrouvez la page d\'accueil du site du SMARNUBIS']) ?>
 
 <?php $this->start('main_content') ?>
  <!-- SLIDER -->

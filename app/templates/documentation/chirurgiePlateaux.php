@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Chirurgie plateaux']) ?>
+<?php $this->layout('layoutType', ['title' => 'Chirurgie plateaux : Smarnubis', 'description' => 'Retrouvez ici les informations relatives à la Chirurgie - Plateaux ']) ?>
 <?php $this->start('main_content') ?>
 	
 <h1>Chirurgie - Plateaux - SROS3</h1>

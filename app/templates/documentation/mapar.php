@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Présentation Mapar']) ?>
+<?php $this->layout('layoutType', ['title' => 'Présentation Mapar - SMARNUBIS', 'description' => 'Retrouvez ici la liste des présentations MAPAR.']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Présentation MAPAR</h1>
