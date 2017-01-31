@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Périnatalité']) ?>
+<?php $this->layout('layoutType', ['title' => 'Périnatalité - SMARNUBIS', 'description' => 'Retrouvez ici les textes réglementaires et les rapports lié à la périnatalité.' ]) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Périnatalité</h1>

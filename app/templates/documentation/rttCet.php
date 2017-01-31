@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'R.T.T / C.E.T.'])?>
+<?php $this->layout('layoutType', ['title' => 'R.T.T / C.E.T. - SMARNUBIS', 'description' => 'Retrouvez ici les informations concernant les rtt et les comptes épargne-temps.'])?>
 
 <?php $this->start('main_content')?>
 	<h1> Textes RTT / CET</h1>

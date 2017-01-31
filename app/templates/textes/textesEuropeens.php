@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Textes européens']) ?>
+<?php $this->layout('layoutType', ['title' => 'Textes européens - SMARNUBIS', 'description' => 'Retrouvez ici la liste des informations concernant les textes européens.']) ?>
 
 <?php $this->start('main_content') ?>
 	

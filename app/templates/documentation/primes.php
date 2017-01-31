@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Primes']) ?>
+<?php $this->layout('layoutType', ['title' => 'Primes - SMARNUBIS', 'description' => 'Retrouvez ici les textes réglementaires et les rapports concernant les primes.']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Primes</h1>

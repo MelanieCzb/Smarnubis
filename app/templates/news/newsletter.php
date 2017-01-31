@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Newsletter']) ?>
+<?php $this->layout('layoutType', ['title' => 'Newsletter - SMARNUBIS', 'description' => 'REtrouvez sur cette page le formulaire d\'inscription à la newsletter du SMARNUBIS.' ]) ?>
 
 <?php $this->start('main_content') ?>
 	

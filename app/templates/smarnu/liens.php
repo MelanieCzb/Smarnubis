@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Liens'])?>
+<?php $this->layout('layoutType', ['title' => 'Liens - SMArnubis', 'description' => 'Retrouvez ici la liste des liens utiles.'])?>
 
 <?php $this->start('main_content')?>
 <h1>Liens utiles</h1>

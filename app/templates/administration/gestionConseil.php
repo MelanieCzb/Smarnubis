@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Gestion du conseil d\'administration']) ?>
+<?php $this->layout('layoutType', ['title' => 'Gestion du conseil d\'administration - SMARNUBIS', 'description' => 'Modifier ou supprimer ici un des délégués régionaux réservé à l\'administrateur.']) ?>
 
 <?php $this->start('main_content') ?>
 

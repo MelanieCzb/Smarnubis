@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Contacts']) ?>
+<?php $this->layout('layoutType', ['title' => 'Contacts : liste des contacts utiles - SMARNUBIS', 'description' => 'Retrouvez ici les conatcts utiles des membres du Smarnu']) ?>
 
 <?php $this->start('main_content') ?>
 	

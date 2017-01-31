@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Gardes et astreintes']) ?>
+<?php $this->layout('layoutType', ['title' => 'Gardes et astreintes - SMARNUBIS', 'description' => 'Retrouvez ici la liste des indormations concernant les gardes ainsi que les astreintes.']) ?>
 
 <?php $this->start('main_content') ?>
 

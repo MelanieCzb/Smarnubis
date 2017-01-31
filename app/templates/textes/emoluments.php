@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Emoluments']) ?>
+<?php $this->layout('layoutType', ['title' => 'Emoluments - SMARNUBIS', 'description' => 'Retrouvez ici la liste des informations concernant les émoluments.']) ?>
 
 <?php $this->start('main_content') ?>
 

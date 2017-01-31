@@ -1,4 +1,4 @@
- <?php $this->layout('layoutType', ['title' => 'Réanimation'])?>
+ <?php $this->layout('layoutType', ['title' => 'Réanimation - SMARNUBIS', 'description' => 'Retrouvez ici les textes réglementaires ainsi que les rapports concernant la réanimation.'])?>
 
 <?php $this->start('main_content')?>
 	<h1>Réanimations</h1>

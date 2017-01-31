@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional']) ?>
+<?php $this->layout('layoutType', ['title' => 'Modifier un délégué régional - SMARNUBIS', 'description' => 'Modifiez les informations concernant les délégués régionaux']) ?>
 
 <?php $this->start('main_content') ?>
 

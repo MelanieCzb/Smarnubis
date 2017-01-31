@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Sécurité']) ?>
+<?php $this->layout('layoutType', ['title' => 'Sécurité - SMARNUBIS', 'description' => 'Retrouvez ici les textes réglementaires ainsi que les rapports concernant la sécurité en anesthésie.' ]) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Sécurité</h1>

@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Retraites'])?>
+<?php $this->layout('layoutType', ['title' => 'Retraites - SMARNUBIS', 'description' => 'Retrouvez ici les informztions relatives aux retraites.'])?>
 
 <?php $this->start('main_content')?>
 	<h1>Retraites</h1>

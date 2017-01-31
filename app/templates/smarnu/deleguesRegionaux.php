@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Le smarnubis']) ?>
+<?php $this->layout('layoutType', ['title' => 'Liste des délégués régionaux - SMARNUBIS', 'description' => 'Retrouvez ici la liste des délégués régionaux ainsi que leurs coordonnées.']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Délégués Régionaux</h1>
