@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Histoire du Smarnu']) ?>
+<?php $this->layout('layoutType', ['title' => 'Histoire du Smarnu - SMARNUBIS', 'description' => 'Retrouvez sur cette page l\'histoire du SMARNUBIS.']) ?>
 
 <?php $this->start('main_content') ?>
 

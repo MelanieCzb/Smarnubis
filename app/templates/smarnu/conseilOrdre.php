@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'conseilOrdre']) ?>
+<?php $this->layout('layoutType', ['title' => 'Conseil de l\'ordre - SMARNUBIS', 'description' => 'Retrouver ici les informations concernant le partenariat entre le SMARNUBIS et le Conseil de l\'Ordre des Médecins.' ]) ?>
 
 <?php $this->start('main_content') ?>
 	<h2>Conseil de l'Ordre</h2>

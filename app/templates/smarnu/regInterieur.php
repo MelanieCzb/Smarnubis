@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Règlement intérieur']) ?>
+<?php $this->layout('layoutType', ['title' => 'Règlement intérieur - SMARNUBIS', 'description' => 'Retrouvez ici le règlement intérieur ainsi que le statut du SMARNUBIS.']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Règlement intérieur et statut</h1>
