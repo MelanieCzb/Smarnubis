@@ -18,6 +18,11 @@
 		
 			
 		<?php endforeach ?>
+
+		<?php
+			if(empty($vigilance)){ ?>
+				<h2> Aucun nouvel enregistrement actuellement </h2>
+			<?php } ?>
 	</section>
 
 <?php $this->stop('main_content') ?>
