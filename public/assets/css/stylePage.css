@@ -2,7 +2,7 @@ main section {
     width: 60%;
     display: inline-block;
     background-color: white;
-    padding: 6rem;
+    padding: 2rem 6rem;
     margin-bottom: 4rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -98,6 +98,29 @@ main button{
     color: white;
 }
 
+.newsletter{
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+
+#news{
+    position: relative;
+}
+
+#form{
+    /*color: red;*/
+}
+
+
+/*.newsletter {
+	max-width: 50%;
+	margin: auto;
+	display: block;
+	position: relative;
+	transform: translate(-50%, 0%);
+}*/
+
 main input, textarea{
   margin-bottom: 1rem;
   border-radius: .5rem;
@@ -135,6 +158,8 @@ main li:before {
 #haWidgetMobile{
     display: none;
 }
+
+
 
 /*---------------------------------------------------------
                 MEDIA QUERIES SMARTPHONE
