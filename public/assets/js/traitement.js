@@ -10,11 +10,13 @@ $(document).ready(function(){
 
 	});
 
-	$('form').submit(function(event){
+	$('form').on('submit', function(event){
 
 		var formScore = 0;
 
 		event.preventDefault();
+
+		var $this = $(this);
 
 		// On vérifie le champ username 
 		// On utilise val pour récupérer la valeur et length pour la longueur
@@ -80,7 +82,16 @@ $(document).ready(function(){
 		if( formScore == 4 ) {
 			console.log(formScore);
 			// Pour terminer proprement le formulaire on en lève le event/prevent pour passer les champs sur le connect.php et on prépare sa requète AJAX
-
+			var data = $this.serialize();
+			console.log(data);
+			$.ajax({
+                url: $this.attr('action'), // Le nom du fichier indiqué dans le formulaire
+                type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
+                data: data, // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
+                success: function(html) { // Je récupère la réponse du fichier PHP
+                    console.log(html); // J'affiche cette réponse
+            	}
+            });
 
 			// Vider les champs du fromulaire
 			$('#username').val('');
