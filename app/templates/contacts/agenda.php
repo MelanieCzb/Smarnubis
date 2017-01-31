@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?>
 	
 
-	<h1>Calendrier</h1>
+	<h1>Événements</h1>
 
 <section>
 	<?php

@@ -7,13 +7,15 @@
 	<section>
 		
 			<h2>Inscription</h2>
-		<div id="news">
-			<div id="form">
+		<!--<div id="news">-->
+			<!--<div id="form">-->
+				<p>Inscrivez-vous à la newsletter du Smarnubis pour recevoir les dernière actualités juridiques, les compte-rendus de réunion, les dates des futures Assemblées Générales...</p>
+				<p>Vous recevrez en moyenne 1 à 2 newsletters par mois.</p>
 				<form method="POST" action="">
 					<input type="text" name="myform[email]" placeholder="Votre email">
 					<input type="submit" name="inscrire" value="S'inscrire">
 				</form>
-			</div>
+			<!--</div>-->
 			
 			<?php
 					if(!empty($erreurs)){ ?>
@@ -40,11 +42,10 @@
 				<?php }
 
 			?>
-
 			
 			<h2>Exemple de nos Newsletter</h2>
 			<img src="<?= $this->assetUrl('img/newsletterJanvier2017.png') ?>" alt="" class="newsletter">
-		</div>
+		<!--</div>-->
 	</section>
 	
 <?php $this->stop('main_content') ?>

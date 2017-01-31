@@ -99,7 +99,7 @@
                         <ul>
                             <li><a href="<?= $this->url('contacts') ?>">Contact</a></li>
                             <li><a href="<?= $this->url('adhesion') ?>">Adhésion</a></li>
-                            <li><a href="<?= $this->url('agenda') ?>">Agenda</a></li>
+                            <li><a href="<?= $this->url('agenda') ?>">Événements</a></li>
                         </ul>
                     </li>
 
