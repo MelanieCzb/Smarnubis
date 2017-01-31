@@ -35,6 +35,7 @@ class SmarnuController extends Controller
 
 	public function crReunion()
 	{
+		$this->allowTo(['user', 'admin']);
 		$categorie = "cr-reunion";
 		$manager = new ArticleManager();
 		$articles = $manager->findAllByCategory($categorie);

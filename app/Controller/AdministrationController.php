@@ -20,45 +20,47 @@ class AdministrationController extends Controller{
 		if ( isset($_POST['inscrire']) ) {
 			
 			// prenom requis
-			if( empty($_POST['myform']['username']) ) {
+			if( empty($_POST['username']) ) {
 				$erreurs[] = "Le nom d'utilisateur est obligatoire.";
 			}
 			// prenom <= 50 caractères
-			if( strlen($_POST['myform']['username']) > 50 ) {
-				$erreurs[] = "Le nom d'utilisateur ne doit pas dépasser 50 caractères.";
-			}
-
-			// email
-			if( empty($_POST['myform']['email']) ) {
-				$erreurs[] = "Le champ Email est obligatoire.";
-			}
-				if( ! filter_var($_POST['myform']['email'], FILTER_VALIDATE_EMAIL) ) {
-					$erreurs[] = "L'email est incorrect.";
+				if( strlen($_POST['username']) > 50 ) {
+					$erreurs[] = "Le nom d'utilisateur ne doit pas dépasser 50 caractères.";
 				}
 
+			// email
+				if( empty($_POST['email']) ) {
+					$erreurs[] = "Le champ Email est obligatoire.";
+				}
+					if( ! filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+						$erreurs[] = "L'email est incorrect.";
+					}
+
 			// password
-			if( empty($_POST['myform']['password']) ) {
-				$erreurs[] = "Le champ Password est obligatoire.";
-			}
+				if( empty($_POST['password']) ) {
+					$erreurs[] = "Le champ Password est obligatoire.";
+				}
 			
-			if ( ! ((strlen($_POST['myform']['password']) >= 6) && (strlen($_POST['myform']['password']) <= 20)) ) {
+			if ( ! ((strlen($_POST['password']) >= 6) && (strlen($_POST['password']) <= 20)) ) {
 				$erreurs[] = "Le champ Password doit comprendre entre 6 et 20 caractères."; 
 					// confirmation
-				if($_POST['myform']['password'] != $_POST['confirmMotDePasse']) {
+				if($_POST['password'] != $_POST['confirmMotDePasse']) {
 					$erreurs[] = "Password et confirmation du password ne sont pas identiques.";
 				}
 			}
 
 			// insertion dans la BDD
 			if(empty($erreurs)){
-				
+				//print_r($_POST);
 					// traitement
-				$_POST['myform']['password'] = password_hash($_POST['myform']['password'], PASSWORD_DEFAULT);
+				$_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 				$manager = new UserManager();
-				$manager->insert($_POST['myform']);
-				$this->redirectToRoute('login');
+				// $manager->insert($_POST['myform']);
+				//$this->redirectToRoute('login');
+				echo "OK";
 			}else{
-				$this->show('Administration/formulaireInscription', ['erreurs' =>$erreurs]);
+				echo "NOK";
+				// $this->show('Administration/formulaireInscription', ['erreurs' =>$erreurs]);
 			}
 		}else{
 			$this->show('Administration/formulaireInscription');

@@ -1,6 +1,9 @@
-<?php $this->layout('layoutType', ['title' => 'Inscription']) ?>
+<?php $this->layout('layoutType', ['title' => 'Inscription', 'description' =>'Page d\'inscription']) ?>
 
 <?php $this->start('main_content') ?>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
 
 	<h1>Formulaire d'inscription</h1>
 
@@ -19,11 +22,11 @@
 		<?php }
 		?>
 
-		<form action="" method="POST">
+		<form action="<?= $this->url('inscription') ?>" method="POST" id="formInscription">
 			<!-- <input type="text" name="nom" placeholder="Votre nom"> -->
-			<input type="text" name="myform[username]" placeholder="Votre nom d'utilisateur" id="username">
-			<input type="text" name="myform[email]" placeholder="Votre email" id="email">
-			<input type="password" name="myform[password]" placeholder="Votre mot de passe" id="password">
+			<input type="text" name="username" placeholder="Votre nom d'utilisateur" id="username">
+			<input type="text" name="email" placeholder="Votre email" id="email">
+			<input type="password" name="password" placeholder="Votre mot de passe" id="password">
 			<input type="password" name="confirmMotDePasse" placeholder="Confirmez votre motre mot de passe" id="confirmMotDePasse">
 			<!-- <input type="text" name="adresse" placeholder="Votre adresse">
 			<input type="text" name="codePostal" placeholder="Votre code postal">
@@ -35,4 +38,9 @@
 	</section>
 	
 
+
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('javascript') ?>
+<script type="text/javascript" src="<?= $this->assetUrl('js/traitement.js') ?>"></script>
+<?php $this->stop('javascript') ?>
