@@ -6,8 +6,6 @@
 		['GET|POST', '/enregistrement', 'Default#enregistrement', 'enregistrement'],
 
 		// Templates/smarnu
-		['GET', '/presentation', 'Smarnu#presentation', 'presentation'],
-
 			['GET', '/deleguesRegionaux', 'smarnu#deleguesRegionaux', 'deleguesRegionaux'],
 
 			['GET', '/conseilAdministration', 'smarnu#conseilAdministration', 'conseilAdministration'],

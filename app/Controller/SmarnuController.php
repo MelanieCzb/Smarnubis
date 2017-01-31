@@ -12,10 +12,7 @@ use \Manager\VigilanceManager;
 class SmarnuController extends Controller
 {
 
-	public function presentation()
-	{
-		$this->show('smarnu/presentation');
-	}
+
 
 	public function deleguesRegionaux()
 	{
