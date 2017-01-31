@@ -23,9 +23,10 @@
 
 	   <h1>Le Syndicat des Médecins Anesthésistes-Réanimateurs<span> Non-Universitaire</span></h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod veritatis excepturi aspernatur eveniet. Qui vitae eos, magni sequi aliquid dolore ipsam non blanditiis illum facere quisquam illo. Pariatur, similique, delectus.
-            </p>
+            <p>Le SMARNU (Syndicat des Médecins Anesthésistes Réanimateurs Non Universitaires) accompagne et défend ses adhérents depuis 1970. Nos principales missions sont la reconnaissance et la valorisation du travail de garde, la revalorisation de nos salaires, l’amélioration de la formation de nos équipes hospitalières…</p>
+            <p>Nous sommes également à vos côté pour vous accompagner en cas de litiges administratifs, au tribunal ou dans toutes vos autres démarches administratives.
+            N’hésitez plus à nous rejoindre, adhérez au Smarnu !</p>
+            
 
             <section id="flat_icon">
                 <div>
