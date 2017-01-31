@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Adhésion']) ?>
+<?php $this->layout('layoutType', ['title' => 'Adhésion : page pour adhérer - SMARNUBIS', 'description' => 'Adhérer au Smarnubis via un formulaire qui protège vos données']) ?>
 
 <?php $this->start('main_content') ?>
 	<h1>Comment adhérer au Smarnubis ?</h1>

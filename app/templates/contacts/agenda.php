@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Agenda']) ?>
+<?php $this->layout('layoutType', ['title' => 'Agenda : présentation des la liste des évènements liés au calendrier - SMARNUBIS', 'description' => 'Retrouvez ici la liste de nos évènments' ]) ?>
 
 <?php $this->start('main_content') ?>
 	

@@ -1,4 +1,4 @@
-<?php $this->layout('layoutType', ['title' => 'Liste des délégués régionaux']) ?>
+<?php $this->layout('layoutType', ['title' => 'Liste des délégués régionaux - SMARNUBIS', 'description' => 'Retrouvez tout les délégués régionaux du site SMARNUBIS']) ?>
 
 <?php $this->start('main_content') ?>
 
